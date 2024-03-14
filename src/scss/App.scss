@@ -1,0 +1,10 @@
+@import '_Header';
+@import '_Navbar';
+@import '_fonts';
+
+.first-screen {
+  background-image: url('../../images/Rectangle64.png');
+  width: 100%;
+  height: 1000px;
+  background-position: center;
+}
