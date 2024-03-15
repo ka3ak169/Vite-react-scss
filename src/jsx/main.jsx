@@ -4,10 +4,12 @@ import { BrowserRouter } from 'react-router-dom';
 import App from './App.jsx'
 import '../css/index.css'
 
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter> 
+    {/* <BrowserRouter basename="/Vite-react-scss"> */}
+    <BrowserRouter>
       <App />
-    </BrowserRouter> 
+    </BrowserRouter>
   </React.StrictMode>,
 )
