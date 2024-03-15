@@ -1,0 +1,89 @@
+@import '_variables';
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+
+  &__logo {
+    background-image: url('../../public/images/LogoWithText.svg');
+    background-repeat: no-repeat;
+    background-position: center;    
+    width: 200px;
+    height: 200px;
+  };
+
+  &__points {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 80px;
+    width: 84px;
+  };
+
+  &__point {
+    background-color: $primary-color;
+    width: 3px;
+    height: 3px;
+    border-radius: 3px;
+  };
+
+  &__text {
+    @include fonts ();
+    font-size: 24px;
+    margin: 80px 0 0;
+    letter-spacing: .2rem;
+    max-width: 300px;
+    text-align: center;
+  };
+}
+
+.banner__button {
+  margin: 40px 0 0;
+  padding: 0;
+  background-color: rgb(20, 19, 19);
+  border: none;
+  height: 32px;
+  width: 130px;
+  position: relative; // Добавлено для позиционирования SVG
+  overflow: hidden; // Убедитесь, что SVG не выходит за границы кнопки
+  color: #fff; // Цвет текста кнопки
+  font-size:16px; // Размер шрифта
+  line-height: 32px; // Высота строки для вертикального центрирования текста
+  text-transform: uppercase; // Преобразование текста в верхний регистр
+  display: flex; // Для центрирования текста и SVG
+  justify-content: center; // Горизонтальное центрирование
+  align-items: center; // Вертикальное центрирование
+  @include fonts ();
+  letter-spacing: .2rem;
+
+  svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  rect {
+    fill: none;
+    stroke: $primary-color;
+    stroke-width: 2;
+    stroke-dasharray: 422, 0;
+    transition: all 0.35s linear;
+  }
+
+  &:hover {
+    background: rgba(20, 19, 19, 0);// Сделать фон прозрачным при наведении
+    cursor: pointer;
+
+    rect {
+      stroke-width: 5;
+      stroke-dasharray: 15, 310;
+      stroke-dashoffset: 48;
+      transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+  }
+}

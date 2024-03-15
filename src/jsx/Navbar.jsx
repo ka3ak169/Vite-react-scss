@@ -10,10 +10,10 @@ function Navbar() {
             <Link className='navbar__link' to="/">main</Link>
           </li>
           <li className='navbar__unit'>
-            <Link className='navbar__link' to="/contacts">contacts</Link>
+            <Link className='navbar__link' to="/contacts">aboust us</Link>
           </li>
           <li className='navbar__unit'>
-            <Link className='navbar__link' to="/about-us">aboust us</Link>
+            <Link className='navbar__link' to="/about-us">contacts</Link>
           </li>
         </nav>
       </div>

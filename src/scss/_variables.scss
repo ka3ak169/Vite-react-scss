@@ -1,0 +1,7 @@
+$primary-color: #523475;
+
+@mixin fonts () {
+  color: $primary-color;
+  font-family: 'ReformaGrotesk', sans-serif;
+  font-weight: 400;
+}
