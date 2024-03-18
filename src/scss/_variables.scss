@@ -1,9 +1,16 @@
 $primary-color: #523475;
 // $primary-color: #ff0000;
 $border-color: #141313;
+$heading-color: #fff;
 
 @mixin fonts () {
   color: $primary-color;
   font-family: 'ReformaGrotesk', sans-serif;
   font-weight: 400;
+}
+
+@mixin borders () {
+  border: 3px solid $border-color;
+  border-right: none;
+  box-sizing: border-box;
 }

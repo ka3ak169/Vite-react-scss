@@ -85,6 +85,7 @@
   background-position: center;
   width: 200px;
   height: 200px;
+  margin-bottom: 80px;
 }
 .banner__points {
   display: -webkit-box;
@@ -100,7 +101,6 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin-top: 80px;
   width: 84px;
 }
 .banner__point {
@@ -224,6 +224,79 @@
   transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
+.achievements {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: #523475;
+  color: #523475;
+  font-family: "ReformaGrotesk", sans-serif;
+  font-weight: 400;
+  padding: 0 8vw;
+  grid-gap: 20px;
+  margin: 40px 0 0;
+}
+.achievements__sheets-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.achievements__inscription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.achievements__points.achievements__points {
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+.achievements__title {
+  margin: 0 0 20px;
+  line-height: 38px;
+  font-size: 32px;
+  color: #523475;
+  font-family: "ReformaGrotesk", sans-serif;
+  font-weight: 400;
+  color: #fff;
+}
+.achievements__cell {
+  padding: 11px 5px;
+  margin-bottom: -3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 3px solid #141313;
+  border-right: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-right: 3px solid #141313;
+}
+.achievements__number {
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+}
+.achievements__cup {
+  margin: 6px 0 0;
+  text-align: center;
+}
+.achievements__right-column {
+  margin: 30px 0 0;
+  margin-left: -3px;
+}
+
 .main {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("../../images/1642439620_12-abrakadabra-fun-p-vodka-na-chernom-fone-16.jpg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../images/1642439620_12-abrakadabra-fun-p-vodka-na-chernom-fone-16.jpg");
@@ -233,4 +306,8 @@
   padding: 30px 60px 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+html {
+  background-color: black;
 }
