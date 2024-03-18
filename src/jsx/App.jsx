@@ -4,6 +4,7 @@ import './Header'
 import Header from './Header'
 import Banner from './Banner'
 import Achievements from './Achievements'
+import Calc from './Calc'
 
 function App() {
   
@@ -17,6 +18,7 @@ function App() {
             <>
               <Banner />
               <Achievements />
+              <Calc />
             </>  
             }
           />

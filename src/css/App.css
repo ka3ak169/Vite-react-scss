@@ -56,13 +56,13 @@
 
 @font-face {
   font-family: "ReformaGrotesk";
-  src: url("../../fonts/ReformaGroteskMedium.woff2") format("woff2"), url("../../fonts/ReformaGroteskMediumC.woff") format("woff");
+  src: url("../fonts/ReformaGroteskMedium.woff2") format("woff2"), url("../fonts/ReformaGroteskMediumC.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "ReformaGrotesk";
-  src: url("../../fonts/ReformaGroteskBold.woff2") format("woff2"), url("../../fonts//ReformaGroteskBoldC.woff") format("woff");
+  src: url("../fonts/ReformaGroteskBold.woff2") format("woff2"), url("../fonts//ReformaGroteskBoldC.woff") format("woff");
   font-weight: bold;
   font-style: bold;
 }
@@ -80,7 +80,7 @@
   padding-top: 80px;
 }
 .banner__logo {
-  background-image: url("../../images/LogoWithText.svg");
+  background-image: url("../images/LogoWithText.svg");
   background-repeat: no-repeat;
   background-position: center;
   width: 200px;
@@ -228,6 +228,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   color: #523475;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   color: #523475;
   font-family: "ReformaGrotesk", sans-serif;
   font-weight: 400;
@@ -238,6 +240,7 @@
 .achievements__sheets-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  max-width: 350px;
 }
 .achievements__inscription {
   display: -webkit-box;
@@ -250,6 +253,7 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  max-width: 370px;
 }
 .achievements__points.achievements__points {
   -ms-flex-item-align: center;
@@ -297,9 +301,14 @@
   margin-left: -3px;
 }
 
+.calc {
+  color: #fff;
+  padding: 70px;
+}
+
 .main {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("../../images/1642439620_12-abrakadabra-fun-p-vodka-na-chernom-fone-16.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../images/1642439620_12-abrakadabra-fun-p-vodka-na-chernom-fone-16.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("/images/1642439620_12-abrakadabra-fun-p-vodka-na-chernom-fone-16.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/images/1642439620_12-abrakadabra-fun-p-vodka-na-chernom-fone-16.jpg");
   width: 100%;
   background-position: center;
   background-size: cover;

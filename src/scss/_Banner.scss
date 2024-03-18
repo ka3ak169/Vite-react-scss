@@ -7,7 +7,7 @@
   padding-top: 80px;
 
   &__logo {
-    background-image: url('../../images/LogoWithText.svg');
+    background-image: url('../images/LogoWithText.svg');
     background-repeat: no-repeat;
     background-position: center;    
     width: 200px;
@@ -20,7 +20,6 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    // margin-top: 80px;
     width: 84px;
   };
 

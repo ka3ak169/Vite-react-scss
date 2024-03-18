@@ -4,6 +4,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   color: $primary-color;
+  justify-content: space-around;  
   @include fonts ();
   padding: 0 8vw;
   grid-gap: 20px;
@@ -12,12 +13,14 @@
   &__sheets-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    max-width: 350px;
   }
 
   &__inscription {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    max-width: 370px;
   }
 
   &__points.achievements__points {

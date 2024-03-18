@@ -3,13 +3,15 @@
 @import '_fonts';
 @import '_Banner';
 @import '_Achievements';
+@import '_Calc';
 
 .main {
-  background-image: linear-gradient(
+  background-image: 
+    linear-gradient(
     rgba(0, 0, 0, 0.7),
     rgba(0, 0, 0, 0.7)
     ),
-    url('../../images/1642439620_12-abrakadabra-fun-p-vodka-na-chernom-fone-16.jpg');
+    url('/images/1642439620_12-abrakadabra-fun-p-vodka-na-chernom-fone-16.jpg');
   width: 100%;
   background-position: center;
   background-size: cover;
