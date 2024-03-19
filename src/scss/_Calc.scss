@@ -3,4 +3,74 @@
 .calc {
   color: $heading-color;
   padding: 70px;
+
+
+  &__container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__input {
+    background-color: $border-color;
+    border: none;
+    text-align: right;
+    @include fonts ();
+    font-size: 25px;
+    color: $heading-color;
+    max-width: 100px;
+    width: 100%;
+    min-height: 30px;
+    padding: 0;
+    
+    &:focus {
+      outline: none;
+    }
+
+    // Скрытие стрелочек для input[type="number"] в Webkit-браузерах
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none; // Yeah, yeah everybody write about it
+      margin: 0; // Добавлено для обеспечения совместимости
+    }
+
+    // Стилизация для input[type="number"] во всех состояниях
+    &[type='number'],
+    &[type="number"]:hover,
+    &[type="number"]:focus {
+      appearance: none;
+      -moz-appearance: textfield; // Специфично для Firefox
+      // Дополнительные стили для input[type="number"]
+    }
+  }
+
+  &__sign {
+    @include fonts ();
+    font-size: 25px;
+    color: $heading-color;
+    margin: 0 6px;
+  }
+
+  &__confirm {
+    // border-radius: 10px;
+    color: white;
+    transition: .2s linear;
+    background: $border-color;
+    border: none;
+    @include fonts();
+    font-size: 25px;
+    max-width: 50px;
+    width: 100%;
+    min-height: 30px;
+    padding: 0;
+    margin-left: 10px;
+    
+    &:hover {
+      box-shadow: 0 0 0 2px $primary-color, 0 0 0 2px #454545;
+      cursor: pointer;
+    }
+  }
 }

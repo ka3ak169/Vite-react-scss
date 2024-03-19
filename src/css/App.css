@@ -305,6 +305,79 @@
   color: #fff;
   padding: 70px;
 }
+.calc__container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.calc__input {
+  background-color: #141313;
+  border: none;
+  text-align: right;
+  color: #523475;
+  font-family: "ReformaGrotesk", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  color: #fff;
+  max-width: 100px;
+  width: 100%;
+  min-height: 30px;
+  padding: 0;
+}
+.calc__input:focus {
+  outline: none;
+}
+.calc__input::-webkit-outer-spin-button, .calc__input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.calc__input[type=number], .calc__input[type=number]:hover, .calc__input[type=number]:focus {
+  -webkit-appearance: none;
+          appearance: none;
+  -moz-appearance: textfield;
+}
+.calc__sign {
+  color: #523475;
+  font-family: "ReformaGrotesk", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  color: #fff;
+  margin: 0 6px;
+}
+.calc__confirm {
+  color: white;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+  background: #141313;
+  border: none;
+  color: #523475;
+  font-family: "ReformaGrotesk", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  max-width: 50px;
+  width: 100%;
+  min-height: 30px;
+  padding: 0;
+  margin-left: 10px;
+}
+.calc__confirm:hover {
+  -webkit-box-shadow: 0 0 0 2px #523475, 0 0 0 2px #454545;
+          box-shadow: 0 0 0 2px #523475, 0 0 0 2px #454545;
+  cursor: pointer;
+}
 
 .main {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("/images/1642439620_12-abrakadabra-fun-p-vodka-na-chernom-fone-16.jpg");
