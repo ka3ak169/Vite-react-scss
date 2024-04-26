@@ -17,7 +17,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #523475;
+  color: #fff;
 }
 .navbar__nav {
   display: -webkit-box;
@@ -48,7 +48,7 @@
 }
 .navbar__link {
   text-decoration: none;
-  color: #523475;
+  color: #fff;
   font-family: "ReformaGrotesk", sans-serif;
   font-weight: 400;
   font-size: 24px;
@@ -80,7 +80,7 @@
   padding-top: 80px;
 }
 .banner__logo {
-  background-image: url("../images/LogoWithText.svg");
+  background-image: url("/images/LogoWithTextWhite.svg");
   background-repeat: no-repeat;
   background-position: center;
   width: 200px;
@@ -104,13 +104,13 @@
   width: 84px;
 }
 .banner__point {
-  background-color: #523475;
+  background-color: #fff;
   width: 3px;
   height: 3px;
   border-radius: 3px;
 }
 .banner__text {
-  color: #523475;
+  color: #fff;
   font-family: "ReformaGrotesk", sans-serif;
   font-weight: 400;
   font-size: 24px;
@@ -130,7 +130,7 @@
   grid-row-gap: 0px;
 }
 .banner__cell {
-  border: 3px solid #141313;
+  border: 2px solid #141313;
   border-right: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -144,10 +144,10 @@
           flex-direction: column;
 }
 .banner__cell:last-child {
-  border-right: 3px solid #141313;
+  border-right: 2px solid #141313;
 }
 .banner__description {
-  color: #523475;
+  color: #fff;
   font-family: "ReformaGrotesk", sans-serif;
   font-weight: 400;
   color: #fff;
@@ -158,8 +158,8 @@
   letter-spacing: 0.1rem;
 }
 .banner__address {
-  color: #523475;
-  color: #523475;
+  color: #fff;
+  color: #fff;
   font-family: "ReformaGrotesk", sans-serif;
   font-weight: 400;
   margin: 32px 0 0;
@@ -173,7 +173,7 @@
 .banner__button {
   margin: 40px 0 0;
   padding: 0;
-  background-color: #141313;
+  background-color: rgba(20, 19, 19, 0);
   border: none;
   height: 32px;
   width: 130px;
@@ -192,7 +192,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #523475;
+  color: #fff;
   font-family: "ReformaGrotesk", sans-serif;
   font-weight: 400;
   letter-spacing: 0.2rem;
@@ -206,7 +206,7 @@
 }
 .banner__button rect {
   fill: none;
-  stroke: #523475;
+  stroke: #fff;
   stroke-width: 2;
   stroke-dasharray: 422, 0;
   -webkit-transition: all 0.35s linear;
@@ -227,10 +227,10 @@
 .achievements {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  color: #523475;
+  color: #fff;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  color: #523475;
+  color: #fff;
   font-family: "ReformaGrotesk", sans-serif;
   font-weight: 400;
   padding: 0 8vw;
@@ -263,7 +263,7 @@
   margin: 0 0 20px;
   line-height: 38px;
   font-size: 32px;
-  color: #523475;
+  color: #fff;
   font-family: "ReformaGrotesk", sans-serif;
   font-weight: 400;
   color: #fff;
@@ -281,7 +281,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 3px solid #141313;
+  border: 2px solid #141313;
   border-right: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -327,7 +327,7 @@
   background-color: #141313;
   border: none;
   text-align: right;
-  color: #523475;
+  color: #fff;
   font-family: "ReformaGrotesk", sans-serif;
   font-weight: 400;
   font-size: 25px;
@@ -350,7 +350,7 @@
   -moz-appearance: textfield;
 }
 .calc__sign {
-  color: #523475;
+  color: #fff;
   font-family: "ReformaGrotesk", sans-serif;
   font-weight: 400;
   font-size: 25px;
@@ -358,12 +358,12 @@
   margin: 0 6px;
 }
 .calc__confirm {
-  color: white;
+  color: red;
   -webkit-transition: 0.2s linear;
   transition: 0.2s linear;
   background: #141313;
   border: none;
-  color: #523475;
+  color: #fff;
   font-family: "ReformaGrotesk", sans-serif;
   font-weight: 400;
   font-size: 25px;
@@ -374,17 +374,65 @@
   margin-left: 10px;
 }
 .calc__confirm:hover {
-  -webkit-box-shadow: 0 0 0 2px #523475, 0 0 0 2px #454545;
-          box-shadow: 0 0 0 2px #523475, 0 0 0 2px #454545;
+  -webkit-box-shadow: 0 0 0 2px #fff, 0 0 0 2px #454545;
+          box-shadow: 0 0 0 2px #fff, 0 0 0 2px #454545;
   cursor: pointer;
 }
 
+.social-icons {
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 9999;
+}
+.social-icons__icon {
+  list-style-type: none;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.social-icons__link {
+  width: 30px;
+  height: 30px;
+  display: block;
+}
+.social-icons__icon.telegram-icon {
+  background-image: url("../../public/images/free-icon-font-telegram-6422206.svg");
+}
+.social-icons__icon.inst-icon {
+  background-image: url("../../public/images/free-icon-font-instagram-6422200.svg");
+}
+.social-icons__icon.watsapp-icon {
+  background-image: url("../../public/images/free-icon-font-whatsapp-6422213.svg");
+  margin: 7px 0;
+}
+
 .main {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("/images/1642439620_12-abrakadabra-fun-p-vodka-na-chernom-fone-16.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/images/1642439620_12-abrakadabra-fun-p-vodka-na-chernom-fone-16.jpg");
+  background-image: url("/images/Default_A_light_almost_white_background_In_the_foreground_slig_2.jpg");
   width: 100%;
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   padding: 30px 60px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;

@@ -5,6 +5,7 @@ import Header from './Header'
 import Banner from './Banner'
 import Achievements from './Achievements'
 import Calc from './Calc'
+import SocialIcons from './SocialIcons'
 
 function App() {
   
@@ -17,14 +18,21 @@ function App() {
             element={
             <>
               <Banner />
-              <Achievements />
+              <SocialIcons />
+              {/* <Achievements /> */}
               <Calc />
             </>  
             }
           />
           {/* <Route
-            path="messages"
-            element={< />}
+            path="contacts"
+            element={
+              <>
+                <Banner />
+                <Achievements />
+                <Calc />
+              </>  
+              }
           /> */}
         </Routes>
       </div>
