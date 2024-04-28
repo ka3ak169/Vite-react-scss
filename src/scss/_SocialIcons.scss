@@ -16,13 +16,15 @@
   z-index: 9999;
 
   &__icon {
-    // width: 50px;
-    // height: 50px;
-    // background-color:black;
     list-style-type: none;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    transition: transform .7s;
+  };
+
+  &__icon:hover {
+    transform: scale(1.2);
   };
 
   &__link {
@@ -41,6 +43,6 @@
 
   &__icon.watsapp-icon {
     background-image: url('../../public/images/free-icon-font-whatsapp-6422213.svg');
-    margin: 7px 0
+    margin: 7px 0;
   };
 };

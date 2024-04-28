@@ -1,0 +1,41 @@
+@import '_variables';
+
+.contacts {
+  width: 100%;
+  margin: 85px 0 0;
+  min-height: 160px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+
+  &__cell {
+    @include borders;
+    padding: 20px 7px;
+    display: flex;
+    flex-direction: column;
+
+    &:last-child {
+      border-right: 2px solid $border-color;;
+    }
+  };    
+
+  &__description {
+    @include fonts ();
+    color: $heading-color;
+    align-items: center;
+    text-align: center;
+    letter-spacing: .1rem;    
+  };
+
+  &__address {
+    color: $primary-color;
+    @include fonts ();
+    margin: 32px 0 0;
+    align-items: center;
+    text-align: center;
+    letter-spacing: .1rem;
+  };
+
+}

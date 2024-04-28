@@ -5,6 +5,9 @@
 @import '_Achievements';
 @import '_Calc';
 @import '_Socialicons';
+@import '_Contacts';
+@import '_UsProduct';
+@import '_Product';
 
 .main {
   background-image: 
@@ -17,6 +20,8 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 30px 60px;
+  // padding: 30px 60px;
+  padding: 0 60px;
   box-sizing: border-box;
+  max-height: 700px;
 };

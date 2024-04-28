@@ -1,4 +1,4 @@
-import { Routes, Route} from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import '../css/App.css'
 import './Header'
 import Header from './Header'
@@ -6,6 +6,10 @@ import Banner from './Banner'
 import Achievements from './Achievements'
 import Calc from './Calc'
 import SocialIcons from './SocialIcons'
+import Contacts from './Contacts'
+import UsProduct from './UsProduct'
+import Product from './Product'
+
 
 function App() {
   
@@ -18,9 +22,11 @@ function App() {
             element={
             <>
               <Banner />
+              {/* <Contacts /> */}
               <SocialIcons />
               {/* <Achievements /> */}
-              <Calc />
+              <UsProduct />
+              {/* <Calc /> */}
             </>  
             }
           />
