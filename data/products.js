@@ -1,22 +1,26 @@
 export const products = [
   {
-    name: "Смартфон Samsung Galaxy S21",
-    description: "Флагманский смартфон с 6.2-дюймовым дисплеем, процессором Exynos 2100, 8 ГБ ОЗУ, 128 ГБ встроенной памяти и тройной камерой."
+    pic: "public/images/gin.png",
+    description: "A classic strong spirit with a distinctive juniper aroma, made by distilling grain alcohol with the addition of juniper berries and various botanical components such as coriander, citrus peel, and cardamom."
   },
   {
-    name: "Ноутбук Apple MacBook Pro",
-    description: "Мощный ноутбук с 16-дюймовым Retina-дисплеем, процессором Apple M1 Pro, 16 ГБ ОЗУ, 512 ГБ SSD и графикой Apple GPU."
+    pic: "public/images/bergamot.png",
+    description: "An exquisite Italian liqueur with a bright citrusy aroma and flavor of bergamot, made by infusing bergamot peel in neutral spirits with the addition of sugar and sometimes other citrus fruits or herbs."
   },
   {
-    name: "Телевизор LG OLED C1",
-    description: "4K OLED-телевизор с 55-дюймовым экраном, поддержкой HDR, технологией Dolby Vision IQ, интеллектуальной операционной системой webOS и встроенными голосовыми помощниками."
+    pic: "public/images/elderflower.png",
+    description: "A fragrant liqueur with a rich flavor of black elderberries, made by infusing ripe elderberries in neutral spirits with the addition of sugar and sometimes other ingredients such as citrus or spices"
   },
   {
-    name: "Наушники Sony WH-1000XM4",
-    description: "Беспроводные наушники с шумоподавлением, 30-часовой автономностью, поддержкой быстрой зарядки, сенсорным управлением и технологией LDAC для высококачественного звука."
+    pic: "public/images/triplesec1.png",
+    description: "A sweet, clear liqueur with a pronounced orange flavor and aroma, made by infusing dried orange peel in neutral spirits with the addition of sugar and sometimes other citrus fruits."
   },
   {
-    name: "Игровая консоль PlayStation 5",
-    description: "Мощная игровая консоль нового поколения с 8-ядерным процессором AMD Zen 2, графическим процессором AMD RDNA 2, 16 ГБ ОЗУ GDDR6, SSD-накопителем на 825 ГБ и поддержкой разрешения 4K."
+    pic: "public/images/feijoa1.png",
+    description: "A unique strong spirit with an exotic fruity aroma and flavor of feijoa, made by distilling fermented feijoa juice and sometimes with the addition of other fruits or botanical components."
+  },
+  {
+    pic: "public/images/dill1.png",
+    description: "An aromatic strong spirit with a distinctive refreshing taste of dill, made by distilling grain alcohol with the addition of dill seeds and sometimes other herbs or spices."
   }
 ];
