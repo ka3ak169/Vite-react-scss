@@ -2,8 +2,9 @@ import { useEffect, useState } from 'react';
 import Product from './Product';
 import { products } from '../../public/data/products';
 
-function UsProduct() {
+function UsProducts() {
   const [isWideScreen, setIsWideScreen] = useState(false);
+  // console.log(products[0].pic);
 
   useEffect(() => {
     const mediaQueryList = window.matchMedia("(min-width: 400px)");
@@ -28,13 +29,13 @@ function UsProduct() {
   //   if (isWideScreen) {
   //     // Логика отрисовки для широких экранов
   //     return products.map((product, index) => (
-  //       <Product key={index} name={product.name} description={product.description} index={index} onisWideScreen={isWideScreen}/>
+  //       <Product key={index} pic={product.pic} description={product.description} index={index} onisWideScreen={isWideScreen}/>
   //     ));
   //   } else {
   //     // Логика отрисовки для маленьких экранов
   //     return products.map((product, index) => (
   //       <div key={index}>
-  //         <h3>{product.name}</h3>
+  //         <h3>{product.pic}</h3>
   //       </div>
   //     ));
   //   }
@@ -43,11 +44,15 @@ function UsProduct() {
   const renderProducts = () => {
       // Логика отрисовки для широких экранов
       return products.map((product, index) => (
-        <Product key={index} name={product.name} description={product.description} index={index} onisWideScreen={isWideScreen}/>
+        <Product key={index} pic={product.pic} description={product.description} index={index} onisWideScreen={isWideScreen}/>
       ));
   };
 
-  return <>{renderProducts()}</>;
+  return <>
+    <div className='us-products'>
+      {renderProducts()}
+    </div>    
+  </>;
 }
 
-export default UsProduct;
+export default UsProducts;

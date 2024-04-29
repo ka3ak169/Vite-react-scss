@@ -349,7 +349,7 @@
   margin: 0;
   padding: 0;
   position: fixed;
-  top: 50%;
+  top: 20%;
   right: 20px;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
@@ -438,12 +438,45 @@
   letter-spacing: 0.1rem;
 }
 
-.jjj {
-  margin-top: 100px;
+.us-products {
+  margin: 0 -60px 0;
+  padding: 55px 60px;
+  background-image: url("public/images/1702651597_kalix-club-p-svetlii-mramor-tekstura-vkontakte-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-.jjj {
-  margin-top: 100px;
+.product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+.product__pic {
+  width: 200px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.product__description {
+  margin: 0;
+  max-width: 400px;
+  color: #fff;
+  font-family: "ReformaGrotesk", sans-serif;
+  font-weight: 400;
+  color: black;
+  font-size: 24px;
+  letter-spacing: 0.1rem;
 }
 
 .main {
@@ -456,4 +489,5 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   max-height: 700px;
+  position: relative;
 }

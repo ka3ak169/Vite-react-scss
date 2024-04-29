@@ -7,7 +7,7 @@ import Achievements from './Achievements'
 import Calc from './Calc'
 import SocialIcons from './SocialIcons'
 import Contacts from './Contacts'
-import UsProduct from './UsProduct'
+import UsProducts from './UsProducts'
 import Product from './Product'
 
 
@@ -25,7 +25,7 @@ function App() {
               {/* <Contacts /> */}
               <SocialIcons />
               {/* <Achievements /> */}
-              <UsProduct />
+              <UsProducts />
               {/* <Calc /> */}
             </>  
             }

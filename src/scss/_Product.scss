@@ -1,5 +1,24 @@
 @import 'variables';
 
-.jjj {
-  margin-top: 100px;
+.product {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+
+  &__pic {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  };
+
+  &__description {
+    margin: 0;
+    max-width: 400px;
+    @include fonts ();
+    color: black;
+    font-size: 24px;
+    letter-spacing: .1rem;
+  };
 }
