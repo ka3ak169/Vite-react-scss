@@ -90,3 +90,11 @@
     }
   }
 }
+
+@media screen and (max-width: 480px) {
+  /* Стили для экранов с шириной до 480px */
+  .banner__button {
+    margin: 40px 0 30px;
+
+  }
+}

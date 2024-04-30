@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .header {
   padding: 0;
   margin: 0;
@@ -175,6 +176,12 @@
   transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
+@media screen and (max-width: 480px) {
+  /* Стили для экранов с шириной до 480px */
+  .banner__button {
+    margin: 40px 0 30px;
+  }
+}
 .achievements {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -441,7 +448,7 @@
 .us-products {
   margin: 0 -60px 0;
   padding: 55px 60px;
-  background-image: url("public/images/1702651597_kalix-club-p-svetlii-mramor-tekstura-vkontakte-1.jpg");
+  background-image: url("images/1702651597_kalix-club-p-svetlii-mramor-tekstura-vkontakte-1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -479,6 +486,18 @@
   letter-spacing: 0.1rem;
 }
 
+@media screen and (max-width: 480px) {
+  .product {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 20px;
+  }
+  .product:first-child {
+    margin-top: 0px;
+  }
+}
 .main {
   background-image: url("/images/Default_A_light_almost_white_background_In_the_foreground_slig_2.jpg");
   width: 100%;

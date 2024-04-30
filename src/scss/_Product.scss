@@ -22,3 +22,14 @@
     letter-spacing: .1rem;
   };
 }
+
+@media screen and (max-width: 480px) {
+  .product {
+    flex-direction: column;
+    margin-top: 20px;    
+  };
+
+  .product:first-child {
+    margin-top: 0px;    
+  };
+}

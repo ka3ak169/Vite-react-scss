@@ -4,10 +4,16 @@
   margin: 0 -60px 0;
   padding: 55px 60px;
   // background-image: url('public/images/2d-graphic-wallpaper-with-colorful-grainy-gradients.jpg');
-  background-image: url('public/images/1702651597_kalix-club-p-svetlii-mramor-tekstura-vkontakte-1.jpg');
+  background-image: url('images/1702651597_kalix-club-p-svetlii-mramor-tekstura-vkontakte-1.jpg');
   // background-image: url('public/images/1702652916_kalix-club-p-tekstura-smyatoi-bumagi-instagram-1.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+@media screen and (max-width: 480px) {
+  .us-products {
+    
+  }
 }
 
