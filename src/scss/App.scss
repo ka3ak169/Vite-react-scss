@@ -8,6 +8,10 @@
 @import '_Contacts';
 @import '_UsProducts';
 @import '_Product';
+@import '_Slider';
+@import '~swiper/scss'; // Основные стили ядра
+@import '~swiper/scss/navigation'; // Стили для модуля Navigation
+@import '~swiper/scss/pagination'; // Стили для модуля Pagination
 
 .main {
   background-image: 

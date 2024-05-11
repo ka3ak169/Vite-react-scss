@@ -9,6 +9,7 @@ import SocialIcons from './SocialIcons'
 import Contacts from './Contacts'
 import UsProducts from './UsProducts'
 import Product from './Product'
+import Slider from './Slider'
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
               <SocialIcons />
               {/* <Achievements /> */}
               <UsProducts />
+              <Slider />
               {/* <Calc /> */}
             </>  
             }
