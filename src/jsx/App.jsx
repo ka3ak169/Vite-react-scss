@@ -10,6 +10,11 @@ import Contacts from './Contacts'
 import UsProducts from './UsProducts'
 import Product from './Product'
 import Slider from './Slider'
+import SliderItem from './SliderItem'
+import { slides } from '../../public/data/products'
+
+console.log(slides);
+
 
 
 function App() {
@@ -27,7 +32,7 @@ function App() {
               <SocialIcons />
               {/* <Achievements /> */}
               <UsProducts />
-              <Slider />
+              <Slider slides={slides}/>
               {/* <Calc /> */}
             </>  
             }

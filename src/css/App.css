@@ -19,7 +19,7 @@
       -ms-flex-align: center;
           align-items: center;
   color: #fff;
-  padding-top: 30px;
+  padding: 30px 60px 0;
 }
 .navbar__nav {
   display: -webkit-box;
@@ -384,13 +384,13 @@
   display: block;
 }
 .social-icons__icon.telegram-icon {
-  background-image: url("../../public/images/free-icon-font-telegram-6422206.svg");
+  background-image: url("../../images/free-icon-font-telegram-6422206.svg");
 }
 .social-icons__icon.inst-icon {
-  background-image: url("../../public/images/free-icon-font-instagram-6422200.svg");
+  background-image: url("../../images/free-icon-font-instagram-6422200.svg");
 }
 .social-icons__icon.watsapp-icon {
-  background-image: url("../../public/images/free-icon-font-whatsapp-6422213.svg");
+  background-image: url("../../images/free-icon-font-whatsapp-6422213.svg");
   margin: 7px 0;
 }
 
@@ -446,12 +446,13 @@
 }
 
 .us-products {
-  margin: 0 -60px 0;
   padding: 55px 60px;
   background-image: url("../images/1702651597_kalix-club-p-svetlii-mramor-tekstura-vkontakte-1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .product {
@@ -498,13 +499,28 @@
     margin-top: 0px;
   }
 }
+.slider {
+  background-color: rgba(46, 39, 39, 0.1803921569);
+  padding: 30px 60px;
+}
+
+.slider-item {
+  text-align: center;
+}
+.slider-item__image {
+  max-height: 200px;
+  max-width: 100%;
+}
+.slider-item__description {
+  text-align: center;
+}
+
 .main {
   background-image: url("/images/Default_A_light_almost_white_background_In_the_foreground_slig_2.jpg");
   width: 100%;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 0 60px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   max-height: 700px;

@@ -1,6 +1,6 @@
 function Product({ pic, description, index, onisWideScreen }) {
   // console.log(onisWideScreen);
-  console.log(pic);
+  // console.log(pic);
   if (!onisWideScreen) {
     return (
       <div className='product'>

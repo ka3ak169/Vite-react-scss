@@ -1,0 +1,13 @@
+@import 'variables';
+
+.slider-item {
+  text-align: center;
+  &__image {
+    max-height: 200px;
+    max-width: 100%;
+  };
+
+  &__description {
+    text-align: center;
+  };
+}

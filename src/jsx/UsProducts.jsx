@@ -4,7 +4,7 @@ import { products } from '../../public/data/products';
 
 function UsProducts() {
   const [isWideScreen, setIsWideScreen] = useState(false);
-  // console.log(products[0].pic);
+  console.log(products[0].pic);
 
   useEffect(() => {
     const mediaQueryList = window.matchMedia("(min-width: 400px)");

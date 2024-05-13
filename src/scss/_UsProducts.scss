@@ -1,7 +1,7 @@
 @import 'variables';
 
 .us-products {
-  margin: 0 -60px 0;
+  // margin: 0 -60px 0;
   padding: 55px 60px;
   // background-image: url('public/images/2d-graphic-wallpaper-with-colorful-grainy-gradients.jpg');
   background-image: url('../images/1702651597_kalix-club-p-svetlii-mramor-tekstura-vkontakte-1.jpg');
@@ -9,4 +9,5 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  box-sizing: border-box;
 }

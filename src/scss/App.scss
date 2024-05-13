@@ -9,9 +9,7 @@
 @import '_UsProducts';
 @import '_Product';
 @import '_Slider';
-@import '~swiper/scss'; // Основные стили ядра
-@import '~swiper/scss/navigation'; // Стили для модуля Navigation
-@import '~swiper/scss/pagination'; // Стили для модуля Pagination
+@import '_SliderItem';
 
 .main {
   background-image: 
@@ -25,7 +23,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   // padding: 30px 60px;
-  padding: 0 60px;
+  // padding: 0 60px;
   box-sizing: border-box;
   max-height: 700px;
   position: relative;
