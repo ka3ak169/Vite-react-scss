@@ -51,3 +51,7 @@ export const slides = [
     description: "An aromatic strong spirit with a distinctive refreshing taste of dill, made by distilling grain alcohol with the addition of dill seeds and sometimes other herbs or spices."
   }
 ];
+
+export const youtubeLink = [
+  'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+];
