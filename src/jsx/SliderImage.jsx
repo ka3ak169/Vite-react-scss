@@ -1,19 +1,28 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, Keyboard, Autoplay, EffectFade } from 'swiper/modules';
+import { Navigation, Pagination, Scrollbar, Keyboard, Autoplay, EffectFade, Controller } from 'swiper/modules';
 import SliderItem from './SliderItem';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+import 'swiper/scss';
+import 'swiper/scss/navigation';
+// import 'swiper/scss/pagination';
 import 'swiper/scss/scrollbar';
 import 'swiper/scss/keyboard';
 import 'swiper/scss/autoplay';
 import 'swiper/scss/effect-fade';
+import 'swiper/scss/controller';
 
-const Slider = ({ slides }) => {
-  console.log(slides);
+const SliderImage = ({ slides, mainSliderRef, thumbsSliderRef }) => {
+  useEffect(() => {
+    if (mainSliderRef.current && thumbsSliderRef.current) {
+      mainSliderRef.current.controller.control = thumbsSliderRef.current;
+      thumbsSliderRef.current.controller.control = mainSliderRef.current;
+    }
+  }, [mainSliderRef, thumbsSliderRef]);
+
+
+  // console.log(slides);
   return (
-    <div className='slider'>
+    <div className='slider-image'>
       <Swiper
         // spaceBetween={50}
         slidesPerView={1}
@@ -28,7 +37,7 @@ const Slider = ({ slides }) => {
         // модуль кнопки навигации
         navigation={{
           nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+          prevEl: '.swiper-button-prev',          
         }}
         // скроллбар
         scrollbar={{ el: '.swiper-scrollbar', draggable: true }}
@@ -43,7 +52,9 @@ const Slider = ({ slides }) => {
         fadeEffect={{
           crossFade: true
         }}
-        modules={[Navigation, Scrollbar, Keyboard, Autoplay, EffectFade]}
+        modules={[Navigation, Scrollbar, Keyboard, Autoplay, EffectFade, Controller]}
+        controller={{ control: thumbsSliderRef.current }}
+        onSwiper={(swiper) => (mainSliderRef.current = swiper)}
         // модуль включает точки вместо скроллбара
         // pagination={{ clickable: true, dynamicBullets: true }}        
         // modules={[Navigation, Pagination]} // Добавлен модуль Pagination
@@ -64,4 +75,4 @@ const Slider = ({ slides }) => {
   );
 };
 
-export default Slider;
+export default SliderImage;

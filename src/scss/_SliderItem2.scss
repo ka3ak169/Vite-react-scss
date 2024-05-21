@@ -1,0 +1,22 @@
+@import 'variables';
+
+.slider-item2 {
+  padding: 0 20px;
+  max-width: 600px;
+  margin: 30px auto 0;
+  letter-spacing: .1rem;
+  border-radius: 10px;
+
+  // &__image {
+  //   max-height: 200px;
+  //   max-width: 100%;
+  // };
+
+  &__description {
+    text-align: center;
+    @include fonts;
+    color: $border-color;
+    font-size: 24px;
+
+  };
+}

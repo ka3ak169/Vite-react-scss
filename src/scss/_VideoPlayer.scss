@@ -1,0 +1,27 @@
+.video-player {
+  padding: 5px 0;
+  background-color: #ffffff; /* Цвет фона */
+  background-image: radial-gradient(circle, #000000 1px, transparent 1px),
+                    radial-gradient(circle, #000000 1px, transparent 1px);
+  background-size: 40px 40px; /* Размер клеток */
+  background-position: 0 0, 20px 20px; /* Смещение для шахматного порядка */
+
+  &__element {
+    max-width: 500px;
+    width: 100%;
+    height: 300px;
+    max-height: 300px;
+    margin: 0 auto 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .video-player {
+    padding: 0;
+
+    &__element {
+      height: 200px;
+      max-height: 200px;
+    }
+  }
+}
