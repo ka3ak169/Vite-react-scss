@@ -13,6 +13,7 @@ import Product from './Product'
 import SliderImage from './SliderImage'
 import SliderDescription from './SliderDescription'
 import VideoPlayer from './VideoPlayer'
+import Footer from './Footer'
 import { slides, youtubeLink } from '../../public/data/products'
 
 // console.log(slides);
@@ -39,6 +40,7 @@ function App() {
               <SliderImage slides={slides} mainSliderRef={mainSliderRef} thumbsSliderRef={thumbsSliderRef}/>
               <SliderDescription slides={slides} thumbsSliderRef={thumbsSliderRef} mainSliderRef={mainSliderRef}/>
               <VideoPlayer links={youtubeLink}/>
+              <Footer />
               {/* <Calc /> */}
             </>  
             }
