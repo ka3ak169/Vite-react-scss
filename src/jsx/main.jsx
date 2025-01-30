@@ -7,8 +7,7 @@ import '../css/index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    {/* <BrowserRouter basename="/Vite-react-scss"> */}
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.VITE_BASE_URL || "/"}>
       <App />
     </BrowserRouter>
   </React.StrictMode>,
