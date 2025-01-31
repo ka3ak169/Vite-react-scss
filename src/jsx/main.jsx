@@ -4,8 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 import App from './App.jsx'
 import '../css/index.css'
 
-const basename = import.meta.env.MODE === 'development' ? '/' : '/Vite-react-scss';
-
+const basename = '/'; // Для кастомного домена это правильное значение
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

@@ -7,8 +7,6 @@ export default defineConfig(({ mode }) => {
   
   return {
     plugins: [react()],
-    define: {
-      'import.meta.env.VITE_BASE_URL': JSON.stringify(env.VITE_BASE_URL || '/')
-    }
+    base: '/',
   };
 });
