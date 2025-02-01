@@ -1,7 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import React, { useRef } from 'react';
 import '../css/App.css'
-import './Header'
 import Header from './Header'
 import Banner from './Banner'
 import Achievements from './Achievements'
@@ -27,14 +26,14 @@ function App() {
   return (
     <>
       <div className='main'>
-        {/* <Header /> */}
+        <Header />
         <Routes>
           <Route path="/"
             element={
             <>
               <Banner />
               {/* <Contacts /> */}
-              <SocialIcons />
+              {/* <SocialIcons /> */}
               {/* <Achievements /> */}
               <UsProducts />
               <SliderImage slides={slides} mainSliderRef={mainSliderRef} thumbsSliderRef={thumbsSliderRef}/>

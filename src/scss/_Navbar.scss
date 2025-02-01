@@ -3,19 +3,52 @@
 .navbar {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
   align-items: center;
-  color: $primary-color;
-  // margin-top: 30px;
-  padding: 30px 60px 0;
+  justify-content: flex-start;
+  padding: 10px;
+  width: auto;
+  background-color: $new-white;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; // Расставляем элементы по краям
+    // width: 100%; // Занимает всю ширину
+  }
+
+  &__logo {
+    text-decoration: none;
+    margin-right: 15px;
+
+    img {
+      width: 40px; // Ширина логотипа
+      height: auto; // Автоматическая высота для сохранения пропорций
+      display: block; // Убираем лишние отступы
+    }
+  }
+
+  &__toggle {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+  }
 
   &__nav {
     display: flex;
     flex-direction: row;
     text-decoration: none;
-  };
+  }
 
-  &__unit {    
+  &__link {
+    @include fonts;
+    color: $new-grey;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  &__unit {
     transition: transform 0.3s ease;
     list-style: none;
     text-decoration: none;
@@ -24,18 +57,46 @@
     &:hover {
       transform: translateY(-5px);
     }
-  };
+  }
 
-  &__unit:last-child {
-    margin-right: 0;
-  };
-  
-  &__link {
-    text-decoration: none;
-    color: $primary-color;
-    // color: greenyellow;
-    font-family: 'ReformaGrotesk', sans-serif;
-    font-weight: 400;
-    font-size: 24px;
+  // ===== Media Queries =====
+  // Телефоны (портретная ориентация)
+  @media (max-width: 768px) and (orientation: portrait) {
+    &__header {
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    &__nav {
+      display: none; // Скрываем пункты меню
+    }
+
+    &__toggle {
+      display: block; // Показываем бургер-кнопку
+    }
+
+    // Переопределение для navbar__nav--open
+    &__nav--open {
+      display: flex !important; // Принудительно показываем меню
+      flex-direction: column;
+      align-items: center;
+      background-color: #fff; // Например, белый фон
+      position: absolute;
+      top: 50px; // Под логотипом
+      right: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+  }
+
+  // Для всех остальных устройств или горизонтальной ориентации
+  @media (min-width: 769px), (orientation: landscape) {
+    &__nav {
+      display: flex; // Показываем пункты меню
+    }
+
+    &__toggle {
+      display: none; // Скрываем бургер-кнопку
+    }
   }
 }

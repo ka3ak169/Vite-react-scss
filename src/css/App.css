@@ -12,14 +12,42 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #fff;
-  padding: 30px 60px 0;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 10px;
+  width: auto;
+  background-color: #f5f5f5;
+}
+.navbar__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.navbar__logo {
+  text-decoration: none;
+  margin-right: 15px;
+}
+.navbar__logo img {
+  width: 40px;
+  height: auto;
+  display: block;
+}
+.navbar__toggle {
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
 }
 .navbar__nav {
   display: -webkit-box;
@@ -30,6 +58,14 @@
       -ms-flex-direction: row;
           flex-direction: row;
   text-decoration: none;
+}
+.navbar__link {
+  color: #fff;
+  font-family: "ReformaGrotesk", sans-serif;
+  font-weight: 400;
+  color: #5c5c5c;
+  text-decoration: none;
+  white-space: nowrap;
 }
 .navbar__unit {
   -webkit-transition: -webkit-transform 0.3s ease;
@@ -45,15 +81,47 @@
       -ms-transform: translateY(-5px);
           transform: translateY(-5px);
 }
-.navbar__unit:last-child {
-  margin-right: 0;
+@media (max-width: 768px) and (orientation: portrait) {
+  .navbar__header {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .navbar__nav {
+    display: none;
+  }
+  .navbar__toggle {
+    display: block;
+  }
+  .navbar__nav--open {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #fff;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+  }
 }
-.navbar__link {
-  text-decoration: none;
-  color: #fff;
-  font-family: "ReformaGrotesk", sans-serif;
-  font-weight: 400;
-  font-size: 24px;
+@media (min-width: 769px), (orientation: landscape) {
+  .navbar__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar__toggle {
+    display: none;
+  }
 }
 
 @font-face {
