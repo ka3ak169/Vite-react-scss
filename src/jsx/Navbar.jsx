@@ -27,27 +27,47 @@ function Navbar() {
 
       <nav className={`navbar__nav ${isOpen ? "navbar__nav--open" : ""}`}>
         <li className="navbar__unit">
-          <Link className="navbar__link" to="/" onClick={closeBurger}>
+          <Link 
+            className="navbar__link" 
+            to="/" 
+            onClick={closeBurger}
+            >
             main
           </Link>
         </li>
         <li className="navbar__unit">
-          <Link className="navbar__link" to="/gin" onClick={closeBurger}>
+          <Link 
+            className="navbar__link" 
+            to="/gin" 
+            onClick={closeBurger}
+            >
             gin
           </Link>
         </li>
         <li className="navbar__unit">
-          <Link className="navbar__link" to="/herbal" onClick={closeBurger}>
+          <Link 
+            className="navbar__link" 
+            to="/herbal" 
+            onClick={closeBurger}
+            >
             herbal
           </Link>
         </li>
         <li className="navbar__unit">
-          <Link className="navbar__link" to="/triple-sec" onClick={closeBurger}>
+          <Link 
+            className="navbar__link" 
+            to="/triple-sec" 
+            onClick={closeBurger}
+            >
             triple sec
           </Link>
         </li>
         <li className="navbar__unit">
-          <Link className="navbar__link" to="/bergamot" onClick={closeBurger}>
+          <Link 
+            className="navbar__link" 
+            to="/bergamot" 
+            onClick={closeBurger}
+            >
             bergamot
           </Link>
         </li>
@@ -61,7 +81,11 @@ function Navbar() {
           </Link>
         </li>
         <li className="navbar__unit">
-          <Link className="navbar__link" to="/feijoa" onClick={closeBurger}>
+          <Link 
+            className="navbar__link" 
+            to="/feijoa" 
+            onClick={closeBurger}
+            >
             feijoa
           </Link>
         </li>
