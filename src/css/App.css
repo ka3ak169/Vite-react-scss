@@ -177,7 +177,7 @@ body.no-scroll {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 80px;
+  padding-top: 63px;
 }
 .banner__logo {
   background-image: url("/images/FlavoraLogoNewGrey.svg");
@@ -624,9 +624,9 @@ body.no-scroll {
   padding: 0 20px;
 }
 .slider-item__image {
-  max-height: 450px;
+  max-height: 300px;
   max-width: 100%;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .slider-item2 {
@@ -645,11 +645,8 @@ body.no-scroll {
 }
 
 .video-player {
-  padding: 5px 0;
-  background-color: #ffffff; /* Цвет фона */
-  background-image: radial-gradient(circle, #000000 1px, transparent 1px), radial-gradient(circle, #000000 1px, transparent 1px);
-  background-size: 40px 40px; /* Размер клеток */
-  background-position: 0 0, 20px 20px; /* Смещение для шахматного порядка */
+  padding: 5px 20px;
+  background-color: #f5f5f5; /* Цвет фона */
 }
 .video-player__element {
   max-width: 500px;
@@ -661,7 +658,7 @@ body.no-scroll {
 
 @media screen and (max-width: 500px) {
   .video-player {
-    padding: 0;
+    padding: 0 20px;
   }
   .video-player__element {
     height: 200px;
@@ -726,6 +723,31 @@ body.no-scroll {
 .footer__icon {
   width: 15px;
   height: 15px;
+}
+
+.description-of {
+  background-color: #f5f5f5;
+  height: auto;
+  padding: 30px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.description-of__text {
+  color: #5c5c5c;
+  font-family: "ReformaGrotesk", sans-serif;
+  font-weight: 400;
+  color: #5c5c5c;
+  font-size: 35px;
+  margin: 0 auto;
+  max-width: 70%;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .description-of__text {
+    font-size: 26px;
+    max-width: 100%;
+  }
 }
 
 .main {

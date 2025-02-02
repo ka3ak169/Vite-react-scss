@@ -1,10 +1,10 @@
 .video-player {
-  padding: 5px 0;
-  background-color: #ffffff; /* Цвет фона */
-  background-image: radial-gradient(circle, #000000 1px, transparent 1px),
-                    radial-gradient(circle, #000000 1px, transparent 1px);
-  background-size: 40px 40px; /* Размер клеток */
-  background-position: 0 0, 20px 20px; /* Смещение для шахматного порядка */
+  padding: 5px 20px;
+  background-color: $new-white; /* Цвет фона */
+  // background-image: radial-gradient(circle, #000000 1px, transparent 1px),
+  //                   radial-gradient(circle, #000000 1px, transparent 1px);
+  // background-size: 40px 40px; /* Размер клеток */
+  // background-position: 0 0, 20px 20px; /* Смещение для шахматного порядка */
 
   &__element {
     max-width: 500px;
@@ -17,7 +17,7 @@
 
 @media screen and (max-width: 500px) {
   .video-player {
-    padding: 0;
+    padding: 0 20px;
 
     &__element {
       height: 200px;

@@ -1,0 +1,25 @@
+@import '_variables';
+
+.description-of {
+  background-color: $new-white;
+  height: auto;
+  padding: 30px 20px;
+  display: flex;
+
+  &__text {
+    @include fonts;
+    color: $new-grey;
+    font-size: 35px;
+    margin: 0 auto;
+    max-width: 70%;
+    text-align: center;
+  }
+
+  // Медиа-запрос для экранов шириной до 768px
+  @media (max-width: 768px) {    
+    &__text {
+      font-size: 26px;
+      max-width: 100%;
+    }
+  }
+}

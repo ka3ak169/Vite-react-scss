@@ -13,6 +13,7 @@ import SliderImage from './SliderImage'
 import SliderDescription from './SliderDescription'
 import VideoPlayer from './VideoPlayer'
 import Footer from './Footer'
+import DescripOfComp from './DescripOfComp'
 import { slides, youtubeLink } from '../../public/data/products'
 
 function App() {
@@ -43,7 +44,8 @@ function App() {
               {/* <Contacts /> */}
               {/* <SocialIcons /> */}
               {/* <Achievements /> */}
-              <UsProducts />
+              {/* <UsProducts /> */}
+              <DescripOfComp/>
               <SliderImage slides={slides} mainSliderRef={mainSliderRef} thumbsSliderRef={thumbsSliderRef}/>
               <SliderDescription slides={slides} thumbsSliderRef={thumbsSliderRef} mainSliderRef={mainSliderRef}/>
               <VideoPlayer links={youtubeLink}/>

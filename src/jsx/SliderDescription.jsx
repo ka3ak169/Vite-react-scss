@@ -48,13 +48,25 @@ const SliderDescription = ({ slides, thumbsSliderRef, mainSliderRef }) => {
         // }}
         // speed={1000}
         // эффект полупрозрачности при смене слайда
-        effect='fade'
-        fadeEffect={{
-          crossFade: true
-        }}
+        // effect='fade'
+        // fadeEffect={{
+        //   crossFade: true
+        // }}
         // модуль связывающий 2 свайпера
         controller={{ control: mainSliderRef.current }}
         onSwiper={(swiper) => (thumbsSliderRef.current = swiper)}
+        breakpoints={{
+          480: {
+            slidesPerView: 1, // Для экранов шириной от 480px — один слайд
+          },
+          768: {
+            slidesPerView: 2, // Для экранов шириной от 768px — два слайда
+          },
+          1024: {
+            slidesPerView: 3, // Для экранов шириной от 1024px — три слайда
+          },
+        }}
+
         modules={[Autoplay, EffectFade, Controller]}
 
 
