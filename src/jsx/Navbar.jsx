@@ -31,7 +31,7 @@ function Navbar() {
     <div className="navbar">
       <div className="navbar__header">
         <Link to="/" className="navbar__logo" onClick={closeBurger}>
-          <img src="/public/images/FlavoraGrey.svg" alt="Flavora logo" />
+          <img src="/images/FlavoraGrey.svg" alt="Flavora logo" />
         </Link>
         <button className="navbar__toggle" onClick={toggleBurger}>
         {isOpen ? "✖" : "☰"}

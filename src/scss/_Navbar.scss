@@ -22,7 +22,7 @@ body.no-scroll {
 
   &__logo {
     text-decoration: none;
-    margin-right: 15px;
+    margin-right: 35px;
 
     img {
       width: 40px;
@@ -55,6 +55,7 @@ body.no-scroll {
     color: $new-grey;
     text-decoration: none;
     white-space: nowrap;
+    font-size: 22px;
   }
 
   &__unit {
