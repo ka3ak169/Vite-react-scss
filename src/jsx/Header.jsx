@@ -1,14 +1,13 @@
-import Navbar from "./Navbar"
+import Navbar from "./Navbar";
 
-function Header() {
-  
+function Header({ isNavOpen, setIsNavOpen }) {
   return (
     <>
       <div className='header'>
-        <Navbar />
+        <Navbar isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
       </div>
     </>
-  )
+  );
 }
 
-export default Header
+export default Header;

@@ -4,13 +4,13 @@ function Banner() {
     <>
       <div className='banner'>
         <div className='banner__logo'></div>
-        <div className='banner__points'>
+        {/* <div className='banner__points'>
           <div className='banner__point'></div>
           <div className='banner__point'></div>
           <div className='banner__point'></div>
           <div className='banner__point'></div>
-        </div>
-        <p className='banner__text'>Flavora gin is the most delicious and incredible in the world</p>
+        </div> */}
+        {/* <p className='banner__text'>Flavora gin is the most delicious and incredible in the world</p> */}
         <button className='banner__button'>
           ORDER
           <svg>

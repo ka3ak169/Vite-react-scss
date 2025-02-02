@@ -21,7 +21,7 @@
     // rgba(0, 0, 0, 0.7),
     // rgba(0, 0, 0, 0.7)
     // ),
-    url('/public/images/image-enhanced.png')
+    url('/public/images/a_professional_-enhanced12.png')
     ;
   width: 100%;
   background-position: center;
@@ -32,4 +32,9 @@
   box-sizing: border-box;
   max-height: 700px;
   position: relative;
+
+  // ===== Смещение на мобильных =====
+  @media (max-width: 768px) {
+    background-position: left 54% center; // Смещение влево
+  }
 };

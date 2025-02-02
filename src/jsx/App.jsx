@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
-import React, { useRef } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import '../css/App.css'
 import Header from './Header'
 import Banner from './Banner'
@@ -15,18 +15,26 @@ import VideoPlayer from './VideoPlayer'
 import Footer from './Footer'
 import { slides, youtubeLink } from '../../public/data/products'
 
-// console.log(slides);
-
-
-
 function App() {
   const mainSliderRef = useRef(null);
   const thumbsSliderRef = useRef(null);
+  const [isNavOpen, setIsNavOpen] = useState(false);
+
+  useEffect(() => {
+    if (isNavOpen) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+    return () => {
+      document.body.classList.remove("no-scroll"); // Очистка при размонтировании
+    };
+  }, [isNavOpen]);
   
   return (
     <>
       <div className='main'>
-        <Header />
+      <Header isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
         <Routes>
           <Route path="/"
             element={

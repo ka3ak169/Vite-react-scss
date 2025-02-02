@@ -69,7 +69,7 @@ body.no-scroll {
   text-decoration: none;
 }
 .navbar__link {
-  color: #fff;
+  color: #5c5c5c;
   font-family: "ReformaGrotesk", sans-serif;
   font-weight: 400;
   color: #5c5c5c;
@@ -180,12 +180,11 @@ body.no-scroll {
   padding-top: 80px;
 }
 .banner__logo {
-  background-image: url("/images/LogoWithTextWhite.svg");
+  background-image: url("/images/FlavoraLogoNewGrey.svg");
   background-repeat: no-repeat;
   background-position: center;
-  width: 200px;
-  height: 200px;
-  margin-bottom: 80px;
+  width: 230px;
+  height: 230px;
 }
 .banner__points {
   display: -webkit-box;
@@ -210,27 +209,27 @@ body.no-scroll {
   border-radius: 3px;
 }
 .banner__text {
-  color: #fff;
+  color: #5c5c5c;
   font-family: "ReformaGrotesk", sans-serif;
   font-weight: 400;
   font-size: 24px;
-  margin: 80px 0 0;
+  margin: 30px 0 80px;
   letter-spacing: 0.2rem;
   max-width: 300px;
   text-align: center;
 }
 
 .banner__button {
-  margin: 40px 0 70px;
+  margin: 230px 0 70px;
   padding: 0;
-  background-color: rgba(20, 19, 19, 0);
+  background-color: rgba(20, 19, 19, 0.05);
   border: none;
-  height: 32px;
-  width: 130px;
+  height: 48px;
+  width: 200px;
   position: relative;
   overflow: hidden;
-  color: #fff;
-  font-size: 16px;
+  color: #5c5c5c;
+  font-size: 20px;
   line-height: 32px;
   text-transform: uppercase;
   display: -webkit-box;
@@ -242,7 +241,7 @@ body.no-scroll {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #fff;
+  color: #5c5c5c;
   font-family: "ReformaGrotesk", sans-serif;
   font-weight: 400;
   letter-spacing: 0.2rem;
@@ -256,8 +255,8 @@ body.no-scroll {
 }
 .banner__button rect {
   fill: none;
-  stroke: #fff;
-  stroke-width: 2;
+  stroke: #5c5c5c;
+  stroke-width: 3;
   stroke-dasharray: 422, 0;
   -webkit-transition: all 0.35s linear;
   transition: all 0.35s linear;
@@ -274,10 +273,14 @@ body.no-scroll {
   transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-@media screen and (max-width: 480px) {
-  /* Стили для экранов с шириной до 480px */
+@media screen and (max-width: 768px) {
+  /* Стили для экранов с шириной до 768px */
+  .banner__logo {
+    width: 180px;
+    height: 180px;
+  }
   .banner__button {
-    margin: 40px 0 30px;
+    margin: 40px 0 300px;
   }
 }
 .achievements {
@@ -286,7 +289,7 @@ body.no-scroll {
   color: #fff;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  color: #fff;
+  color: #5c5c5c;
   font-family: "ReformaGrotesk", sans-serif;
   font-weight: 400;
   padding: 0 8vw;
@@ -319,7 +322,7 @@ body.no-scroll {
   margin: 0 0 20px;
   line-height: 38px;
   font-size: 32px;
-  color: #fff;
+  color: #5c5c5c;
   font-family: "ReformaGrotesk", sans-serif;
   font-weight: 400;
   color: #fff;
@@ -383,7 +386,7 @@ body.no-scroll {
   background-color: #141313;
   border: none;
   text-align: right;
-  color: #fff;
+  color: #5c5c5c;
   font-family: "ReformaGrotesk", sans-serif;
   font-weight: 400;
   font-size: 25px;
@@ -406,7 +409,7 @@ body.no-scroll {
   -moz-appearance: textfield;
 }
 .calc__sign {
-  color: #fff;
+  color: #5c5c5c;
   font-family: "ReformaGrotesk", sans-serif;
   font-weight: 400;
   font-size: 25px;
@@ -419,7 +422,7 @@ body.no-scroll {
   transition: 0.2s linear;
   background: #141313;
   border: none;
-  color: #fff;
+  color: #5c5c5c;
   font-family: "ReformaGrotesk", sans-serif;
   font-weight: 400;
   font-size: 25px;
@@ -520,7 +523,7 @@ body.no-scroll {
   border-right: 2px solid #141313;
 }
 .contacts__description {
-  color: #fff;
+  color: #5c5c5c;
   font-family: "ReformaGrotesk", sans-serif;
   font-weight: 400;
   color: #fff;
@@ -532,7 +535,7 @@ body.no-scroll {
 }
 .contacts__address {
   color: #fff;
-  color: #fff;
+  color: #5c5c5c;
   font-family: "ReformaGrotesk", sans-serif;
   font-weight: 400;
   margin: 32px 0 0;
@@ -577,7 +580,7 @@ body.no-scroll {
 .product__description {
   margin: 0;
   max-width: 400px;
-  color: #fff;
+  color: #5c5c5c;
   font-family: "ReformaGrotesk", sans-serif;
   font-weight: 400;
   color: black;
@@ -634,7 +637,7 @@ body.no-scroll {
 }
 .slider-item2__description {
   text-align: center;
-  color: #fff;
+  color: #5c5c5c;
   font-family: "ReformaGrotesk", sans-serif;
   font-weight: 400;
   color: #141313;
@@ -667,7 +670,7 @@ body.no-scroll {
 }
 .footer {
   background-color: rgba(46, 39, 39, 0.1803921569);
-  color: #fff;
+  color: #5c5c5c;
   font-family: "ReformaGrotesk", sans-serif;
   font-weight: 400;
   color: #141313;
@@ -726,7 +729,7 @@ body.no-scroll {
 }
 
 .main {
-  background-image: url("/public/images/image-enhanced.png");
+  background-image: url("/public/images/a_professional_-enhanced12.png");
   width: 100%;
   background-position: center;
   background-size: cover;
@@ -735,4 +738,9 @@ body.no-scroll {
           box-sizing: border-box;
   max-height: 700px;
   position: relative;
+}
+@media (max-width: 768px) {
+  .main {
+    background-position: left 54% center;
+  }
 }

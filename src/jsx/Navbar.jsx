@@ -1,31 +1,15 @@
-import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
-
+function Navbar({ isNavOpen, setIsNavOpen }) {
   // Функция для переключения состояния бургера
   const toggleBurger = () => {
-    setIsOpen((prev) => !prev);
+    setIsNavOpen((prev) => !prev);
   };
 
   // Функция для закрытия бургера
   const closeBurger = () => {
-    setIsOpen(false);
+    setIsNavOpen(false);
   };
-
-  useEffect(() => {
-    if (isOpen) {
-      document.body.classList.add("no-scroll");
-    } else {
-      document.body.classList.remove("no-scroll");
-    }
-
-    // Очистка при размонтировании
-    return () => {
-      document.body.classList.remove("no-scroll");
-    };
-  }, [isOpen]);
 
   return (
     <div className="navbar">
@@ -34,11 +18,11 @@ function Navbar() {
           <img src="/images/FlavoraGrey.svg" alt="Flavora logo" />
         </Link>
         <button className="navbar__toggle" onClick={toggleBurger}>
-        {isOpen ? "✖" : "☰"}
+          {isNavOpen ? "✖" : "☰"}
         </button>
       </div>
 
-      <nav className={`navbar__nav ${isOpen ? "navbar__nav--open" : ""}`}>
+      <nav className={`navbar__nav ${isNavOpen ? "navbar__nav--open" : ""}`}>
         <li className="navbar__unit">
           <Link 
             className="navbar__link" 
