@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 function Navbar() {
@@ -14,6 +14,19 @@ function Navbar() {
     setIsOpen(false);
   };
 
+  useEffect(() => {
+    if (isOpen) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+
+    // Очистка при размонтировании
+    return () => {
+      document.body.classList.remove("no-scroll");
+    };
+  }, [isOpen]);
+
   return (
     <div className="navbar">
       <div className="navbar__header">
@@ -21,7 +34,7 @@ function Navbar() {
           <img src="/public/images/FlavoraGrey.svg" alt="Flavora logo" />
         </Link>
         <button className="navbar__toggle" onClick={toggleBurger}>
-          ☰
+        {isOpen ? "✖" : "☰"}
         </button>
       </div>
 

@@ -1,5 +1,10 @@
 @import 'variables';
 
+body.no-scroll {
+  overflow: hidden; // Отключаем прокрутку
+  height: 100%; // Фиксируем высоту
+}
+
 .navbar {
   display: flex;
   flex-direction: row;
@@ -12,8 +17,7 @@
   &__header {
     display: flex;
     align-items: center;
-    justify-content: flex-start; // Расставляем элементы по краям
-    // width: 100%; // Занимает всю ширину
+    justify-content: flex-start;
   }
 
   &__logo {
@@ -21,9 +25,9 @@
     margin-right: 15px;
 
     img {
-      width: 40px; // Ширина логотипа
-      height: auto; // Автоматическая высота для сохранения пропорций
-      display: block; // Убираем лишние отступы
+      width: 40px;
+      height: auto;
+      display: block;
     }
   }
 
@@ -33,6 +37,11 @@
     border: none;
     cursor: pointer;
     display: none;
+    color: $new-grey; // Цвет по умолчанию
+
+    &--open {
+      color: $new-grey; // Цвет для крестика
+    }
   }
 
   &__nav {
@@ -68,7 +77,20 @@
     }
 
     &__nav {
-      display: none; // Скрываем пункты меню
+      display: flex; // Оставляем flex для корректной работы анимации
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      top: 50px;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $new-white;
+      z-index: 1000;
+      opacity: 0; // Начальное состояние: невидимо
+      visibility: hidden; // Начальное состояние: скрыто
+      transform: translateY(-100%); // Начальное состояние: за пределами экрана
+      transition: opacity 0.2s ease, transform 0.3s ease, visibility 0.1s ease;
     }
 
     &__toggle {
@@ -77,15 +99,17 @@
 
     // Переопределение для navbar__nav--open
     &__nav--open {
-      display: flex !important; // Принудительно показываем меню
-      flex-direction: column;
-      align-items: center;
-      background-color: #fff; // Например, белый фон
-      position: absolute;
-      top: 50px; // Под логотипом
-      right: 0;
-      width: 100%;
-      z-index: 1000;
+      opacity: 1; // Видимо
+      visibility: visible; // Показываем
+      transform: translateY(0); // Возвращаем на место
+    }
+
+    &__link {
+      font-size: 40px;
+    }
+
+    &__unit {
+      margin: 15px 0;
     }
   }
 
