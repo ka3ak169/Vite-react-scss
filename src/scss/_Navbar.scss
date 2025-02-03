@@ -29,6 +29,7 @@ body.no-scroll {
       height: auto;
       display: block;
     }
+
   }
 
   &__toggle {
@@ -111,6 +112,11 @@ body.no-scroll {
 
     &__unit {
       margin: 15px 0;
+    }
+
+    // Скрытие логотипа на главной странице
+    .navbar__logo.navbar--home {
+      visibility: hidden; // Логотип становится невидимым
     }
   }
 

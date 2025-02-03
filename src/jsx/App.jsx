@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route  } from 'react-router-dom';
 import React, { useRef, useState, useEffect } from 'react';
 import '../css/App.css'
 import Header from './Header'
@@ -15,6 +15,7 @@ import VideoPlayer from './VideoPlayer'
 import Footer from './Footer'
 import DescripOfComp from './DescripOfComp'
 import { slides, youtubeLink } from '../../public/data/products'
+import productPages from '../../public/data/productPages'
 
 function App() {
   const mainSliderRef = useRef(null);
@@ -34,26 +35,36 @@ function App() {
   
   return (
     <>
-      <div className='main'>
-      <Header isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
+      <div className="main">
+        <Header isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
         <Routes>
-          <Route path="/"
+          <Route
+            path="/"
             element={
-            <>
-              <Banner />
-              {/* <Contacts /> */}
-              {/* <SocialIcons /> */}
-              {/* <Achievements /> */}
-              {/* <UsProducts /> */}
-              <DescripOfComp/>
-              <SliderImage slides={slides} mainSliderRef={mainSliderRef} thumbsSliderRef={thumbsSliderRef}/>
-              <SliderDescription slides={slides} thumbsSliderRef={thumbsSliderRef} mainSliderRef={mainSliderRef}/>
-              <VideoPlayer links={youtubeLink}/>
-              <Footer />
-              {/* <Calc /> */}
-            </>  
+              <>
+                <Banner />
+                {/* <Contacts /> */}
+                {/* <SocialIcons /> */}
+                {/* <Achievements /> */}
+                {/* <UsProducts /> */}
+                <DescripOfComp />
+                <SliderImage
+                  slides={slides}
+                  mainSliderRef={mainSliderRef}
+                  thumbsSliderRef={thumbsSliderRef}
+                />
+                <SliderDescription
+                  slides={slides}
+                  thumbsSliderRef={thumbsSliderRef}
+                  mainSliderRef={mainSliderRef}
+                />
+                <VideoPlayer links={youtubeLink} />
+                <Footer />
+                {/* <Calc /> */}
+              </>
             }
           />
+          <Route path="/:productId" element={<Product product={productPages} />} />
           {/* <Route
             path="contacts"
             element={
@@ -67,7 +78,7 @@ function App() {
         </Routes>
       </div>
     </>
-  )
+  );
 }
 
 export default App
