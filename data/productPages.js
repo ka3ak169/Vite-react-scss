@@ -19,7 +19,7 @@ const productPages = {
   },
   herbal: {
     title: "Herbal Liqueur",
-    image: "/public/images/dill1.png",
+    image: "/images/dill1.png",
     category: "Liqueur",
     abv: "55%",
     sugar: "20%",
