@@ -53,5 +53,5 @@ export const slides = [
 ];
 
 export const youtubeLink = [
-  'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+  'https://youtu.be/jfkouSD9HmY?si=ly5SYBT7Bjp8X4L8'
 ];
