@@ -1,48 +1,54 @@
-@import 'variables';
-
+// Стили для SocialIcons внутри Popup
 .social-icons {
-  width: 50px;
-  height: 50px;
-  display: flex;
-  flex-direction: column;
+  display: flex; // Размещаем иконки горизонтально
   justify-content: center;
   align-items: center;
-  margin: 0;
+  gap: 25px;
+  margin-top: 15px;
   padding: 0;
-  position: fixed;
-  top: 20%;
-  right: 20px;
-  transform: translateY(-50%);
-  z-index: 9999;
 
   &__icon {
     list-style-type: none;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    transition: transform .7s;
-  };
+    transition: transform 0.3s;
+    width: 40px;
+    height: 40px;
+    fill: red;
 
-  &__icon:hover {
-    transform: scale(1.2);
-  };
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
 
   &__link {
-    width: 30px;
-    height: 30px;
     display: block;
+    width: 40px;
+    height: 40px;
   }
 
   &__icon.telegram-icon {
     background-image: url('../../images/free-icon-font-telegram-6422206.svg');
-  };
+  }
 
   &__icon.inst-icon {
     background-image: url('../../images/free-icon-font-instagram-6422200.svg');
-  };
+  }
 
   &__icon.watsapp-icon {
     background-image: url('../../images/free-icon-font-whatsapp-6422213.svg');
-    margin: 7px 0;
-  };
-};
+  }
+}
+
+// Анимация появления
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

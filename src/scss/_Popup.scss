@@ -1,0 +1,68 @@
+@import 'variables';
+
+// Фон-оверлей
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw; // Полная ширина экрана
+  height: 100vh; // Полная высота экрана
+  background: rgba(0, 0, 0, 0.6); // Затемнённый фон
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; // Поверх всего контента
+}
+
+// Основной контейнер попапа
+.popup {
+  background: white; // Фон попапа
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%; // Для адаптивности на мобильных устройствах
+  max-width: 400px; // Максимальная ширина попапа
+  text-align: center; // Центровка текста
+  position: relative; // Для позиционирования кнопки закрытия
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); // Тень для объёма
+  animation: fadeIn 0.3s ease-in-out; // Плавное появление
+
+  &__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none; // Убираем фон кнопки
+    border: none; // Убираем рамки
+    font-size: 20px;
+    cursor: pointer; // Курсор "рука"
+    transition: transform 0.2s ease-in-out;
+    color: $new-grey;
+
+    &:hover {
+      transform: scale(1.1); // Небольшое увеличение при наведении
+    }
+  }
+
+  &__title {
+    @include fonts;
+    font-size: 32px; // Размер заголовка
+    // font-weight: bold;
+    margin-bottom: 20px; // Отступ снизу
+    color: $new-grey; // Основной цвет текста
+  }
+
+  &__content {
+    margin-top: 20px; // Отступ сверху
+    display: flex;
+    flex-direction: column; // Содержимое в колонку
+    align-items: center; // Центровка иконок
+  }
+}
+
+// Адаптивные стили для мобильных устройств
+@media (max-width: 480px) {
+  .popup-overlay {
+    padding: 20px;
+    width: calc(100vw - 40px); // Учитываем отступы по бокам
+    max-width: none;
+  }
+}

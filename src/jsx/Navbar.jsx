@@ -1,7 +1,6 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Navbar({ isNavOpen, setIsNavOpen }) {
-  const location = useLocation(); // Получаем текущий путь
 
   // Функция для переключения состояния бургера
   const toggleBurger = () => {
@@ -19,9 +18,7 @@ function Navbar({ isNavOpen, setIsNavOpen }) {
         {/* Логотип */}
         <Link
           to="/"
-          className={`navbar__logo ${
-            location.pathname === "/" ? "navbar--home" : ""
-          }`}
+          className="navbar__logo"
           onClick={closeBurger}
         >
           <img src="/images/FlavoraGrey.svg" alt="Flavora logo" />

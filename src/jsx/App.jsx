@@ -1,52 +1,64 @@
-import { BrowserRouter as Router, Routes, Route  } from 'react-router-dom';
-import React, { useRef, useState, useEffect } from 'react';
-import '../css/App.css'
-import Header from './Header'
-import Banner from './Banner'
-import Achievements from './Achievements'
-import Calc from './Calc'
-import SocialIcons from './SocialIcons'
-import Contacts from './Contacts'
-import UsProducts from './UsProducts'
-import Product from './Product'
-import SliderImage from './SliderImage'
-import SliderDescription from './SliderDescription'
-import VideoPlayer from './VideoPlayer'
-import Footer from './Footer'
-import DescripOfComp from './DescripOfComp'
-import { slides, youtubeLink } from '../../public/data/products'
-import productPages from '../../public/data/productPages'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import React, { useRef, useState, useEffect } from "react";
+import "../css/App.css";
+import Header from "./Header";
+import Banner from "./Banner";
+import Achievements from "./Achievements";
+import Calc from "./Calc";
+import SocialIcons from "./SocialIcons";
+import Contacts from "./Contacts";
+import UsProducts from "./UsProducts";
+import Product from "./Product";
+import SliderImage from "./SliderImage";
+import SliderDescription from "./SliderDescription";
+import VideoPlayer from "./VideoPlayer";
+import Footer from "./Footer";
+import DescripOfComp from "./DescripOfComp";
+import { slides, youtubeLink } from "../../public/data/products";
+import productPages from "../../public/data/productPages";
+import Popup from "./Popup";
 
 function App() {
   const mainSliderRef = useRef(null);
   const thumbsSliderRef = useRef(null);
-  const [isNavOpen, setIsNavOpen] = useState(false);
 
+  // === Состояние для Navbar ===
+  const [isNavbarOpen, setIsNavbarOpen] = useState(false);
+
+  // === Состояние для Popup ===
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+  // Функции управления Navbar
+  const toggleNavbar = () => setIsNavbarOpen((prev) => !prev);
+  const closeNavbar = () => setIsNavbarOpen(false);
+
+  // Функции управления Popup
+  const togglePopup = () => setIsPopupOpen((prev) => !prev);
+  const closePopup = () => setIsPopupOpen(false);
+
+  // Отключение скролла при открытии Navbar или Popup
   useEffect(() => {
-    if (isNavOpen) {
+    if (isNavbarOpen || isPopupOpen) {
       document.body.classList.add("no-scroll");
     } else {
       document.body.classList.remove("no-scroll");
     }
+
     return () => {
-      document.body.classList.remove("no-scroll"); // Очистка при размонтировании
+      document.body.classList.remove("no-scroll");
     };
-  }, [isNavOpen]);
-  
+  }, [isNavbarOpen, isPopupOpen]);
+
   return (
     <>
       <div className="main">
-        <Header isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
+        <Header isNavOpen={isNavbarOpen} setIsNavOpen={setIsNavbarOpen} />
         <Routes>
           <Route
             path="/"
             element={
               <>
-                <Banner />
-                {/* <Contacts /> */}
-                {/* <SocialIcons /> */}
-                {/* <Achievements /> */}
-                {/* <UsProducts /> */}
+                <Banner togglePopup={togglePopup} />
                 <DescripOfComp />
                 <SliderImage
                   slides={slides}
@@ -59,26 +71,19 @@ function App() {
                   mainSliderRef={mainSliderRef}
                 />
                 <VideoPlayer links={youtubeLink} />
+                <Popup isPopupOpen={isPopupOpen} closePopup={closePopup} />
                 <Footer />
-                {/* <Calc /> */}
               </>
             }
           />
-          <Route path="/:productId" element={<Product product={productPages} />} />
-          {/* <Route
-            path="contacts"
-            element={
-              <>
-                <Banner />
-                <Achievements />
-                <Calc />
-              </>  
-              }
-          /> */}
+          <Route
+            path="/:productId"
+            element={<Product product={productPages} />}
+          />
         </Routes>
       </div>
     </>
   );
 }
 
-export default App
+export default App;
