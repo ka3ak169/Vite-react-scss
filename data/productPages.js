@@ -1,7 +1,7 @@
 const productPages = {
   gin: {
     title: "Gin Flavora",
-    image: "/images/wetransfer__o1a8701-jpg_2025-02-14_1001/_O1A8779.jpg",
+    image: "/images/new_image/O1A8779.jpg",
     category: "Distillate",
     abv: "43%",
     sugar: "No sugar",
