@@ -1,6 +1,6 @@
 export const products = [
   {
-    pic: "images/gin.png",
+    pic: "/public/images/wetransfer__o1a8701-jpg_2025-02-14_1001/_O1A8779.jpg",
     description: "A classic strong spirit with a distinctive juniper aroma, made by distilling grain alcohol with the addition of juniper berries and various botanical components such as coriander, citrus peel, and cardamom."
   },
   {
@@ -27,29 +27,41 @@ export const products = [
 
 export const slides = [
   {
-    image: "images/gin.png",
+    image: "/images/wetransfer__o1a8701-jpg_2025-02-14_1001/_O1A8779.jpg",
     description: "A classic strong spirit with a distinctive juniper aroma, made by distilling grain alcohol with the addition of juniper berries and various botanical components such as coriander, citrus peel, and cardamom."
   },
   {
-    image: "images/bergamot.png",
+    image: "/images/wetransfer__o1a8701-jpg_2025-02-14_1001/_O1A8838new.png",
     description: "An exquisite Italian liqueur with a bright citrusy aroma and flavor of bergamot, made by infusing bergamot peel in neutral spirits with the addition of sugar and sometimes other citrus fruits or herbs."
   },
   {
-    image: "images/elderflower.png",
+    image: "/images/wetransfer__o1a8701-jpg_2025-02-14_1001/_O1A8701new.png",
     description: "A fragrant liqueur with a rich flavor of black elderberries, made by infusing ripe elderberries in neutral spirits with the addition of sugar and sometimes other ingredients such as citrus or spices"
   },
   {
-    image: "images/triplesec1.png",
+    image: "/images/wetransfer__o1a8701-jpg_2025-02-14_1001/_O1A8939new.jpg",
     description: "A sweet, clear liqueur with a pronounced orange flavor and aroma, made by infusing dried orange peel in neutral spirits with the addition of sugar and sometimes other citrus fruits."
   },
   {
-    image: "images/feijoa1.png",
+    image: "/images/wetransfer__o1a8701-jpg_2025-02-14_1001/_O1A8836new.png",
     description: "A unique strong spirit with an exotic fruity aroma and flavor of feijoa, made by distilling fermented feijoa juice and sometimes with the addition of other fruits or botanical components."
   },
   {
-    image: "images/dill1.png",
-    description: "An aromatic strong spirit with a distinctive refreshing taste of dill, made by distilling grain alcohol with the addition of dill seeds and sometimes other herbs or spices."
-  }
+    image: "/images/wetransfer__o1a8701-jpg_2025-02-14_1001/_O1A8824new.png",
+    description: "A rich and aromatic herbal liqueur, bursting with complex flavors and a velvety texture."
+  },
+  {
+    image: "/images/wetransfer__o1a8701-jpg_2025-02-14_1001/_O1A8795 3.jpg",
+    description: ""
+  },
+  {
+    image: "/images/wetransfer__o1a8701-jpg_2025-02-14_1001/_O1A8864.jpg",
+    description: ""
+  },
+  {
+    image: "/images/wetransfer__o1a8701-jpg_2025-02-14_1001/_O1A8707new.png",
+    description: ""
+  },
 ];
 
 export const youtubeLink = [

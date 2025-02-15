@@ -4,11 +4,13 @@ const DescripOfComp = () => {
   return (
     <div className="description-of">
       <p className="description-of__text">
-        We are a young and dynamic company specializing in the production of
-        gin, various distillates, and liqueurs. With great care and passion for
-        our craft, we strive to grow and improve every single day. We are
-        delighted to present our products, crafted with heart and soul, for you
-        to enjoy.
+      Welcome to FLAVORA – Where Craft Meets Excellence
+      </p>
+      <p className="description-of__text">
+      At FLAVORA, we believe that every sip should be an experience. Our dedication to quality, natural ingredients, and innovative distillation techniques allows us to create exceptional beverages that delight the taste. From the vibrant ingredients of botanicals to the refined artistry behind every bottle, we craft drinks that elevate moments and awaken new flavors.
+      </p>
+      <p className="description-of__text">
+      Explore our collection and discover the essence of craftsmanship in every drop.
       </p>
     </div>
   );
