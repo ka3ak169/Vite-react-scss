@@ -1,7 +1,7 @@
 const productPages = {
   gin: {
     title: "Gin Flavora",
-    image: "/images/wetransfer__o1a8701-jpg_2025-02-14_1001/_O1A8779.jpg",
+    image: "/images/new_image/O1A8779.jpg",
     category: "Distillate",
     abv: "43%",
     sugar: "No sugar",
@@ -19,7 +19,7 @@ const productPages = {
   },
   herbal: {
     title: "Herbal Liqueur",
-    image: "/images/wetransfer__o1a8701-jpg_2025-02-14_1001/_O1A8824new.png",
+    image: "/images/new_image/O1A8824new.png",
     category: "Liqueur",
     abv: "55%",
     sugar: "20%",
@@ -37,7 +37,7 @@ const productPages = {
   },
   "triple-sec": {
     title: "Triple Sec",
-    image: "/images/wetransfer__o1a8701-jpg_2025-02-14_1001/_O1A8939new.jpg",
+    image: "/images/new_image/O1A8939new.jpg",
     category: "Liqueur",
     abv: "40%",
     sugar: "20%",
@@ -55,7 +55,7 @@ const productPages = {
   },
   bergamot: {
     title: "Bergamot Liqueur",
-    image: "/images/wetransfer__o1a8701-jpg_2025-02-14_1001/_O1A8838new.png",
+    image: "/images/new_image/O1A8838new.png",
     category: "Liqueur",
     abv: "34%",
     sugar: "25%",
@@ -73,7 +73,7 @@ const productPages = {
   },
   elderflower: {
     title: "Elderflower Liqueur",
-    image: "/images/wetransfer__o1a8701-jpg_2025-02-14_1001/_O1A8837new.png",
+    image: "/images/new_image/O1A8837new.png",
     category: "Liqueur",
     abv: "20%",
     sugar: "25%",
@@ -91,7 +91,7 @@ const productPages = {
   },
   feijoa: {
     title: "Feijoa Distillate",
-    image: "/images/wetransfer__o1a8701-jpg_2025-02-14_1001/_O1A8836new.png",
+    image: "/images/new_image/O1A8836new.png",
     category: "Distillate",
     abv: "40%",
     sugar: "No sugar",
