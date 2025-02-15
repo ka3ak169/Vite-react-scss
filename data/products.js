@@ -51,7 +51,7 @@ export const slides = [
     description: "A rich and aromatic herbal liqueur, bursting with complex flavors and a velvety texture."
   },
   {
-    image: "/images/new_image/_O1A8795 3.jpg",
+    image: "/images/new_image/O1A8795 3.jpg",
     description: ""
   },
   {
