@@ -17,6 +17,11 @@
     text-align: center;
   }
 
+  .flavora-font {
+    @include font-text;
+    font-size: 30px;
+  }
+
   // Медиа-запрос для экранов шириной до 768px
   @media (max-width: 768px) {    
     &__text {

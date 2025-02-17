@@ -1,9 +1,9 @@
 @import '_variables';
 
 .footer {
-  background-color: $background-color;
+  background-color: $new-white;
   @include fonts;
-  color: $border-color;
+  color: $new-grey;
   height: 40px;
   display: flex;
   align-items: self-end;

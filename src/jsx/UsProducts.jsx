@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import Product from './Product';
-import { products } from '../../public/data/products';
+// import { products } from '../../public/data/products';
 
 function UsProducts() {
   const [isWideScreen, setIsWideScreen] = useState(false);
@@ -41,17 +41,17 @@ function UsProducts() {
   //   }
   // };
 
-  const renderProducts = () => {
-      // Логика отрисовки для широких экранов
-      return products.map((product, index) => (
-        <Product key={index} pic={product.pic} description={product.description} index={index} onisWideScreen={isWideScreen}/>
-      ));
-  };
+  // const renderProducts = () => {
+  //     // Логика отрисовки для широких экранов
+  //     return products.map((product, index) => (
+  //       <Product key={index} pic={product.pic} description={product.description} index={index} onisWideScreen={isWideScreen}/>
+  //     ));
+  // };
 
   return <>
-    <div className='us-products'>
+    {/* <div className='us-products'>
       {renderProducts()}
-    </div>    
+    </div>     */}
   </>;
 }
 

@@ -25,7 +25,7 @@ body.no-scroll {
           justify-content: flex-start;
   padding: 10px;
   width: auto;
-  background-color: #f5f5f5;
+  background-color: #1d1d1d;
 }
 .navbar__header {
   display: -webkit-box;
@@ -53,10 +53,10 @@ body.no-scroll {
   border: none;
   cursor: pointer;
   display: none;
-  color: #5c5c5c;
+  color: #c9c9c9;
 }
 .navbar__toggle--open {
-  color: #5c5c5c;
+  color: #c9c9c9;
 }
 .navbar__nav {
   display: -webkit-box;
@@ -69,10 +69,10 @@ body.no-scroll {
   text-decoration: none;
 }
 .navbar__link {
-  color: #5c5c5c;
-  font-family: "ReformaGrotesk", sans-serif;
+  color: #c9c9c9;
+  font-family: "Handelson-One", "Arial Black", "Impact", sans-serif;
   font-weight: 400;
-  color: #5c5c5c;
+  color: #c9c9c9;
   text-decoration: none;
   white-space: nowrap;
   font-size: 22px;
@@ -114,7 +114,7 @@ body.no-scroll {
     right: 0;
     width: 100%;
     height: 100%;
-    background-color: #f5f5f5;
+    background-color: #1d1d1d;
     z-index: 1000;
     opacity: 0;
     visibility: hidden;
@@ -166,6 +166,18 @@ body.no-scroll {
   font-weight: bold;
   font-style: bold;
 }
+@font-face {
+  font-family: "Handelson-One";
+  src: url("../fonts/Handelson-One.woff2") format("woff2"), url("../fonts/Handelson-One.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MinionPro-Bold";
+  src: url("../fonts/MinionPro-Bold.woff2") format("woff2"), url("../fonts/MinionPro-Bold.woff2") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
 .banner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -177,7 +189,7 @@ body.no-scroll {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 63px;
+  padding-top: 90px;
 }
 .banner__logo {
   background-image: url("/images/FlavoraLogoNewGrey.svg");
@@ -209,7 +221,7 @@ body.no-scroll {
   border-radius: 3px;
 }
 .banner__text {
-  color: #5c5c5c;
+  color: #c9c9c9;
   font-family: "ReformaGrotesk", sans-serif;
   font-weight: 400;
   font-size: 24px;
@@ -220,7 +232,7 @@ body.no-scroll {
 }
 
 .banner__button {
-  margin: 230px 0 70px;
+  margin: 210px 0 63px;
   padding: 0;
   background-color: rgba(20, 19, 19, 0.05);
   border: none;
@@ -228,7 +240,7 @@ body.no-scroll {
   width: 200px;
   position: relative;
   overflow: hidden;
-  color: #5c5c5c;
+  color: #c9c9c9;
   font-size: 20px;
   line-height: 32px;
   text-transform: uppercase;
@@ -241,7 +253,7 @@ body.no-scroll {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #5c5c5c;
+  color: #c9c9c9;
   font-family: "ReformaGrotesk", sans-serif;
   font-weight: 400;
   letter-spacing: 0.2rem;
@@ -255,7 +267,7 @@ body.no-scroll {
 }
 .banner__button rect {
   fill: none;
-  stroke: #5c5c5c;
+  stroke: #c9c9c9;
   stroke-width: 3;
   stroke-dasharray: 422, 0;
   -webkit-transition: all 0.35s linear;
@@ -280,7 +292,7 @@ body.no-scroll {
     height: 180px;
   }
   .banner__button {
-    margin: 137px 0 213px;
+    margin: 137px 0 186px;
   }
 }
 .achievements {
@@ -289,7 +301,7 @@ body.no-scroll {
   color: #fff;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  color: #5c5c5c;
+  color: #c9c9c9;
   font-family: "ReformaGrotesk", sans-serif;
   font-weight: 400;
   padding: 0 8vw;
@@ -322,7 +334,7 @@ body.no-scroll {
   margin: 0 0 20px;
   line-height: 38px;
   font-size: 32px;
-  color: #5c5c5c;
+  color: #c9c9c9;
   font-family: "ReformaGrotesk", sans-serif;
   font-weight: 400;
   color: #fff;
@@ -386,7 +398,7 @@ body.no-scroll {
   background-color: #141313;
   border: none;
   text-align: right;
-  color: #5c5c5c;
+  color: #c9c9c9;
   font-family: "ReformaGrotesk", sans-serif;
   font-weight: 400;
   font-size: 25px;
@@ -409,7 +421,7 @@ body.no-scroll {
   -moz-appearance: textfield;
 }
 .calc__sign {
-  color: #5c5c5c;
+  color: #c9c9c9;
   font-family: "ReformaGrotesk", sans-serif;
   font-weight: 400;
   font-size: 25px;
@@ -422,7 +434,7 @@ body.no-scroll {
   transition: 0.2s linear;
   background: #141313;
   border: none;
-  color: #5c5c5c;
+  color: #c9c9c9;
   font-family: "ReformaGrotesk", sans-serif;
   font-weight: 400;
   font-size: 25px;
@@ -538,7 +550,7 @@ body.no-scroll {
   border-right: 2px solid #141313;
 }
 .contacts__description {
-  color: #5c5c5c;
+  color: #c9c9c9;
   font-family: "ReformaGrotesk", sans-serif;
   font-weight: 400;
   color: #fff;
@@ -550,7 +562,7 @@ body.no-scroll {
 }
 .contacts__address {
   color: #fff;
-  color: #5c5c5c;
+  color: #c9c9c9;
   font-family: "ReformaGrotesk", sans-serif;
   font-weight: 400;
   margin: 32px 0 0;
@@ -582,9 +594,9 @@ body.no-scroll {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #f5f5f5;
+  background-color: #1d1d1d;
   padding: 0 0 30px;
-  color: #5c5c5c;
+  color: #c9c9c9;
   font-family: "ReformaGrotesk", sans-serif;
   font-weight: 400;
 }
@@ -598,6 +610,9 @@ body.no-scroll {
   font-size: 32px;
   text-align: center;
   margin-bottom: 20px;
+  color: #c9c9c9;
+  font-family: "Handelson-One", "Arial Black", "Impact", sans-serif;
+  font-weight: 400;
 }
 @media (min-width: 768px) {
   .product-page__title {
@@ -654,7 +669,7 @@ body.no-scroll {
           flex-direction: column;
   gap: 10px;
   text-align: center;
-  background-color: rgba(46, 39, 39, 0.1803921569);
+  background-color: rgba(137, 137, 137, 0.9333333333);
   padding: 20px;
   border-radius: 0px;
 }
@@ -697,7 +712,7 @@ body.no-scroll {
 }
 
 .slider-image {
-  background-color: rgba(46, 39, 39, 0.1803921569);
+  background-color: rgba(137, 137, 137, 0.9333333333);
   padding: 60px 0 0;
 }
 .slider-image .swiper-button-next::after,
@@ -711,7 +726,7 @@ body.no-scroll {
 }
 
 .slider-description {
-  background-color: rgba(46, 39, 39, 0.1803921569);
+  background-color: rgba(137, 137, 137, 0.9333333333);
 }
 
 .slider-item {
@@ -733,7 +748,7 @@ body.no-scroll {
 }
 .slider-item2__description {
   text-align: center;
-  color: #5c5c5c;
+  color: #c9c9c9;
   font-family: "ReformaGrotesk", sans-serif;
   font-weight: 400;
   color: #141313;
@@ -742,7 +757,7 @@ body.no-scroll {
 
 .video-player {
   padding: 5px 20px;
-  background-color: #f5f5f5; /* Цвет фона */
+  background-color: #1d1d1d; /* Цвет фона */
 }
 .video-player__element {
   max-width: 500px;
@@ -762,11 +777,11 @@ body.no-scroll {
   }
 }
 .footer {
-  background-color: rgba(46, 39, 39, 0.1803921569);
-  color: #5c5c5c;
+  background-color: #1d1d1d;
+  color: #c9c9c9;
   font-family: "ReformaGrotesk", sans-serif;
   font-weight: 400;
-  color: #141313;
+  color: #c9c9c9;
   height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -822,7 +837,7 @@ body.no-scroll {
 }
 
 .description-of {
-  background-color: #f5f5f5;
+  background-color: #1d1d1d;
   height: auto;
   padding: 30px 20px;
   display: -webkit-box;
@@ -835,14 +850,20 @@ body.no-scroll {
   gap: 30px;
 }
 .description-of__text {
-  color: #5c5c5c;
+  color: #c9c9c9;
   font-family: "ReformaGrotesk", sans-serif;
   font-weight: 400;
-  color: #5c5c5c;
+  color: #c9c9c9;
   font-size: 35px;
   margin: 0 auto;
   max-width: 60%;
   text-align: center;
+}
+.description-of .flavora-font {
+  color: #c9c9c9;
+  font-family: "MinionPro-Bold", "Georgia", "Times New Roman", serif;
+  font-weight: 400;
+  font-size: 30px;
 }
 @media (max-width: 768px) {
   .description-of__text {
@@ -896,7 +917,7 @@ body.no-scroll {
   transition: -webkit-transform 0.2s ease-in-out;
   transition: transform 0.2s ease-in-out;
   transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
-  color: #5c5c5c;
+  color: #c9c9c9;
 }
 .popup__close:hover {
   -webkit-transform: scale(1.1);
@@ -904,12 +925,12 @@ body.no-scroll {
           transform: scale(1.1);
 }
 .popup__title {
-  color: #5c5c5c;
+  color: #c9c9c9;
   font-family: "ReformaGrotesk", sans-serif;
   font-weight: 400;
   font-size: 32px;
   margin-bottom: 20px;
-  color: #5c5c5c;
+  color: #c9c9c9;
 }
 .popup__content {
   margin-top: 20px;
@@ -933,8 +954,8 @@ body.no-scroll {
   }
 }
 .main {
-  background-image: url("/public/images/a_professional_-enhanced12.png");
-  background-color: #f5f5f5;
+  background-image: url("/public/images/mainPic2.jpg");
+  background-color: #1d1d1d;
   width: 100%;
   background-position: center;
   background-size: cover;
@@ -946,6 +967,6 @@ body.no-scroll {
 }
 @media (max-width: 768px) {
   .main {
-    background-position: left 54% center;
+    background-position: right 56% center;
   }
 }

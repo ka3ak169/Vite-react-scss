@@ -52,7 +52,8 @@ body.no-scroll {
   }
 
   &__link {
-    @include fonts;
+    // @include fonts;
+    @include font-title;
     color: $new-grey;
     text-decoration: none;
     white-space: nowrap;

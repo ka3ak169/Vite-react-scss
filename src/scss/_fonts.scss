@@ -13,3 +13,19 @@
   font-weight: bold;
   font-style: bold;
 };
+
+@font-face {
+  font-family: 'Handelson-One';
+  src: url('../fonts/Handelson-One.woff2') format('woff2'),
+       url('../fonts/Handelson-One.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MinionPro-Bold';
+  src: url('../fonts/MinionPro-Bold.woff2') format('woff2'),
+       url('../fonts/MinionPro-Bold.woff2') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
