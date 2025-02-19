@@ -29,7 +29,7 @@ const SliderDescription = ({ slides, thumbsSliderRef, mainSliderRef }) => {
         // рука курсор
         grabCursor={true}
         // настройки кнопками двигать слайды
-        // loop={true}
+        loop={true}
         // keyboard={{
         //   enabled: true,
         //   onlyInViewport: true

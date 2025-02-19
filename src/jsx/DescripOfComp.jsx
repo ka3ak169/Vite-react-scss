@@ -4,13 +4,20 @@ const DescripOfComp = () => {
   return (
     <div className="description-of">
       <p className="description-of__text">
-        Welcome to <span className="flavora-font">FLAVORA</span> – Where Craft Meets Excellence
+        WELCOME TO <span className="flavora-font">FLAVORA</span> – WHERE CRAFT
+        MEETS EXCELLENCE
       </p>
       <p className="description-of__text">
-        At <span className="flavora-font">FLAVORA</span>, we believe that every sip should be an experience. Our dedication to quality, natural ingredients, and innovative distillation techniques allows us to create exceptional beverages that delight the taste. From the vibrant ingredients of botanicals to the refined artistry behind every bottle, we craft drinks that elevate moments and awaken new flavors.
+        AT FLAVORA, WE BELIEVE THAT EVERY
+        SIP SHOULD BE AN EXPERIENCE. OUR DEDICATION TO QUALITY, NATURAL
+        INGREDIENTS, AND INNOVATIVE DISTILLATION TECHNIQUES ALLOWS US TO CREATE
+        EXCEPTIONAL BEVERAGES THAT DELIGHT THE TASTE. FROM THE VIBRANT
+        INGREDIENTS OF BOTANICALS TO THE REFINED ARTISTRY BEHIND EVERY BOTTLE,
+        WE CRAFT DRINKS THAT ELEVATE MOMENTS AND AWAKEN NEW FLAVORS.
       </p>
       <p className="description-of__text">
-        Explore our collection and discover the essence of craftsmanship in every drop.
+        EXPLORE OUR COLLECTION AND DISCOVER THE ESSENCE OF CRAFTSMANSHIP IN
+        EVERY DROP.
       </p>
     </div>
   );

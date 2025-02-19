@@ -669,7 +669,7 @@ body.no-scroll {
           flex-direction: column;
   gap: 10px;
   text-align: center;
-  background-color: rgba(137, 137, 137, 0.9333333333);
+  background-color: rgba(108, 108, 108, 0.9333333333);
   padding: 20px;
   border-radius: 0px;
 }
@@ -712,7 +712,7 @@ body.no-scroll {
 }
 
 .slider-image {
-  background-color: rgba(137, 137, 137, 0.9333333333);
+  background-color: rgba(108, 108, 108, 0.9333333333);
   padding: 60px 0 0;
 }
 .slider-image .swiper-button-next::after,
@@ -726,7 +726,7 @@ body.no-scroll {
 }
 
 .slider-description {
-  background-color: rgba(137, 137, 137, 0.9333333333);
+  background-color: rgba(108, 108, 108, 0.9333333333);
 }
 
 .slider-item {
@@ -854,7 +854,7 @@ body.no-scroll {
   font-family: "ReformaGrotesk", sans-serif;
   font-weight: 400;
   color: #c9c9c9;
-  font-size: 35px;
+  font-size: 30px;
   margin: 0 auto;
   max-width: 60%;
   text-align: center;
@@ -893,7 +893,7 @@ body.no-scroll {
 }
 
 .popup {
-  background: white;
+  background: #1d1d1d;
   padding: 20px;
   border-radius: 10px;
   width: 90%;
