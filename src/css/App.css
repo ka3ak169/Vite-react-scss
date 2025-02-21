@@ -928,7 +928,7 @@ body.no-scroll {
   color: #c9c9c9;
   font-family: "ReformaGrotesk", sans-serif;
   font-weight: 400;
-  font-size: 32px;
+  font-size: 24px;
   margin-bottom: 20px;
   color: #c9c9c9;
 }
@@ -945,12 +945,37 @@ body.no-scroll {
       -ms-flex-align: center;
           align-items: center;
 }
+.popup__text {
+  color: #c9c9c9;
+  margin: 20px 0 16px;
+  color: #c9c9c9;
+  font-family: "ReformaGrotesk", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+.popup__email {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  color: #c9c9c9;
+  font-family: "ReformaGrotesk", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+.popup__email:hover {
+  text-decoration: underline;
+}
+.popup__address {
+  font-size: 14px;
+  color: #c9c9c9;
+  margin-top: 10px;
+}
 
 @media (max-width: 480px) {
-  .popup-overlay {
-    padding: 20px;
-    width: calc(100vw - 40px);
-    max-width: none;
+  .popup {
+    width: 100%;
+    max-width: 90%;
   }
 }
 .main {

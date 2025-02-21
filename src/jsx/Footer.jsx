@@ -6,7 +6,7 @@ function Footer() {
           <p className="footer__description">
             website designed by 
             <a className="footer__link" href='https://github.com/ka3ak169'>
-              <span className="footer__name">Alexey Kazakov</span>
+              <span className="footer__name"></span>
               <img className="footer__icon" src='images/icons8-github-50.png' alt='GitHub' />
             </a>
           </p>

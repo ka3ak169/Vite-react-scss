@@ -29,9 +29,13 @@ const Popup = ({ isPopupOpen, closePopup }) => {
           ✖
         </button>
         <h2 className="popup__title">Order via your preferred social media</h2>
+        
+        {/* Иконки соцсетей */}
         <div className="popup__content">
           <SocialIcons />
         </div>
+        <p className="popup__text">Or you can email us at:</p>
+        <a href="mailto:lab@flavora.ge" className="popup__email">lab@flavora.ge</a>
       </div>
     </div>
   );
