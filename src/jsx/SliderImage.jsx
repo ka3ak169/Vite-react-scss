@@ -22,7 +22,7 @@ const SliderImage = ({ slides, mainSliderRef, thumbsSliderRef }) => {
 
   // console.log(slides);
   return (
-    <div className='slider-image'>
+    <div className="slider-image">
       <Swiper
         // spaceBetween={50}
         slidesPerView={1}
@@ -33,19 +33,19 @@ const SliderImage = ({ slides, mainSliderRef, thumbsSliderRef }) => {
         loop={true}
         keyboard={{
           enabled: true,
-          onlyInViewport: true
+          onlyInViewport: true,
         }}
         // модуль кнопки навигации
         navigation={{
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',          
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         }}
         // скроллбар
-        scrollbar={{ el: '.swiper-scrollbar', draggable: true }}
+        scrollbar={{ el: ".swiper-scrollbar", draggable: true }}
         // модель автопрокрутки
-        autoplay= {{
+        autoplay={{
           delay: 3000,
-          disableOnInteraction: true
+          disableOnInteraction: true,
         }}
         speed={1000}
         // эффект полупрозрачности при смене слайда
@@ -53,7 +53,14 @@ const SliderImage = ({ slides, mainSliderRef, thumbsSliderRef }) => {
         // fadeEffect={{
         //   crossFade: true
         // }}
-        modules={[Navigation, Scrollbar, Keyboard, Autoplay, EffectFade, Controller]}
+        modules={[
+          Navigation,
+          Scrollbar,
+          Keyboard,
+          Autoplay,
+          EffectFade,
+          Controller,
+        ]}
         controller={{ control: thumbsSliderRef.current }}
         breakpoints={{
           480: {
@@ -68,7 +75,7 @@ const SliderImage = ({ slides, mainSliderRef, thumbsSliderRef }) => {
         }}
         onSwiper={(swiper) => (mainSliderRef.current = swiper)}
         // модуль включает точки вместо скроллбара
-        // pagination={{ clickable: true, dynamicBullets: true }}        
+        // pagination={{ clickable: true, dynamicBullets: true }}
         // modules={[Navigation, Pagination]} // Добавлен модуль Pagination
       >
         {/* стрелочки */}
@@ -78,12 +85,15 @@ const SliderImage = ({ slides, mainSliderRef, thumbsSliderRef }) => {
         <div className="swiper-scrollbar"></div>
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
-            <SliderItem image={slide.image} description={slide.description} />
+            <SliderItem
+              image={slide.image}
+              description={slide.description}
+              link={slide.link} // Передаем ссылку
+            />
           </SwiperSlide>
         ))}
       </Swiper>
     </div>
-    
   );
 };
 
