@@ -77,6 +77,15 @@ function App() {
             }
           />
           <Route
+            path="/calc"
+            element={
+              <>
+                <Calc />
+                <Footer />
+              </>
+            }
+          />
+          <Route
             path="/:productId"
             element={<Product product={productPages} />}
           />

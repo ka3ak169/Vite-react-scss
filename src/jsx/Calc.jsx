@@ -1,86 +1,145 @@
 import React, { useState } from 'react';
+import '../scss/App.scss';
 
 function Calc() {
-  // Создаем отдельное состояние для каждого поля ввода
-  const [value1, setValue1] = useState('');
-  const [value2, setValue2] = useState('');
-  const [value3, setValue3] = useState('');
-  const [value4, setValue4] = useState('');
+  const [values, setValues] = useState(['', '', '', '']);
 
-  // Функция для обработки изменений в полях ввода
-  function handleChange(event, setValue) {
-    const newValue = event.target.value;
-    setValue(newValue); // Обновляем состояние соответствующего поля ввода
-  }
+  // Функция для проверки валидности числа
+  const isValidNumber = (value) => {
+    return value !== '' && !isNaN(value) && value !== '0';
+  };
 
-  function isValidNumber(value) {
-    return value !== undefined && value !== null && value !== '' && !isNaN(value);
-  }
-
-  function manipulateIfOneMissing(num1, num2, num3, num4) {
-    const numbers = [num1, num2, num3, num4];
-    const validNumbersCount = numbers.filter(isValidNumber).length;
-  
-    if (validNumbersCount === 3) {
-      const missingIndex = numbers.findIndex(n => !isValidNumber(n));
-      // Теперь missingIndex содержит индекс числа, которого нет
-      // Вы можете провести манипуляции с этим числом
-      // Например, вызвать функцию для этого числа (если это имеет смысл)
-      console.log(missingIndex);
-      // Здесь можно вызвать функцию для обработки отсутствующего числа      
-      if (missingIndex === 0) {
-        setValue1(value3 * value4 / value2)
-        console.log(value1);
-      } else if (missingIndex === 1) {
-        setValue2(value3 * value4 / value1)
-        console.log(value2);
-      } else if (missingIndex === 2) {
-        setValue3(value1 * value2 / value4)
-        console.log(value3);
-      } else if (missingIndex === 3) {
-        setValue4(value1 * value2 / value3)
-        console.log(value4);
+  // Функция для расчета пропорции a*x=b*y
+  const calculateProportion = () => {
+    const numbers = values.map(val => isValidNumber(val) ? parseFloat(val) : null);
+    const validCount = numbers.filter(num => num !== null).length;
+    
+    if (validCount === 3) {
+      const missingIndex = numbers.findIndex(num => num === null);
+      
+      // a*x=b*y
+      if (missingIndex === 0) { // если отсутствует a
+        return (numbers[2] * numbers[3]) / numbers[1];
+      } else if (missingIndex === 1) { // если отсутствует x
+        return (numbers[2] * numbers[3]) / numbers[0];
+      } else if (missingIndex === 2) { // если отсутствует b
+        return (numbers[0] * numbers[1]) / numbers[3];
+      } else if (missingIndex === 3) { // если отсутствует y
+        return (numbers[0] * numbers[1]) / numbers[2];
       }
-    } else {
-      console.log('не так числа стоят');
     }
-  }
+    return null;
+  };
+
+  // Обработчик изменения значений
+  const handleChange = (index, value) => {
+    const newValues = [...values];
+    newValues[index] = value;
+    setValues(newValues);
+  };
+
+  // Обработчик удаления значения
+  const handleDelete = (index) => {
+    const newValues = [...values];
+    newValues[index] = '';
+    setValues(newValues);
+  };
+
+  // Обработчик расчета
+  const handleCalculate = () => {
+    const result = calculateProportion();
+    if (result !== null) {
+      const newValues = [...values];
+      newValues[values.findIndex(val => !isValidNumber(val))] = result.toFixed(2);
+      setValues(newValues);
+    }
+  };
+
+  // Обработчик очистки всех полей
+  const handleClear = () => {
+    setValues(['', '', '', '']);
+  };
 
   return (
     <div className='calc'>
       <div className='calc__container'>
-        <input
-          className='calc__input'
-          type="number"
-          value={value1}
-          onChange={(e) => handleChange(e, setValue1)}
-        />
-        <span className='calc__sign'>x</span>
-        <input
-          className='calc__input'
-          type="number"
-          value={value2}
-          onChange={(e) => handleChange(e, setValue2)}
-        />
-        <span className='calc__sign'>=</span>
-        <input
-          className='calc__input'
-          type="number"
-          value={value3}
-          onChange={(e) => handleChange(e, setValue3)}
-        />
-        <span className='calc__sign'>x</span>
-        <input
-          className='calc__input'
-          type="number"
-          value={value4}
-          onChange={(e) => handleChange(e, setValue4)}
-        />
+        <div className='calc__row'>
+          <div className='calc__input-group'>
+            <input
+              className='calc__input'
+              type="number"
+              value={values[0]}
+              onChange={(e) => handleChange(0, e.target.value)}
+              placeholder="Введите число"
+            />
+            <button
+              className='calc__delete'
+              onClick={() => handleDelete(0)}
+            >
+              ×
+            </button>
+          </div>
+          <span className='calc__sign'>x</span>
+          <div className='calc__input-group'>
+            <input
+              className='calc__input'
+              type="number"
+              value={values[1]}
+              onChange={(e) => handleChange(1, e.target.value)}
+              placeholder="Введите число"
+            />
+            <button
+              className='calc__delete'
+              onClick={() => handleDelete(1)}
+            >
+              ×
+            </button>
+          </div>
+          <span className='calc__sign'>=</span>
+          <div className='calc__input-group'>
+            <input
+              className='calc__input'
+              type="number"
+              value={values[2]}
+              onChange={(e) => handleChange(2, e.target.value)}
+              placeholder="Введите число"
+            />
+            <button
+              className='calc__delete'
+              onClick={() => handleDelete(2)}
+            >
+              ×
+            </button>
+          </div>
+          <span className='calc__sign'>x</span>
+          <div className='calc__input-group'>
+            <input
+              className='calc__input'
+              type="number"
+              value={values[3]}
+              onChange={(e) => handleChange(3, e.target.value)}
+              placeholder="Введите число"
+            />
+            <button
+              className='calc__delete'
+              onClick={() => handleDelete(3)}
+            >
+              ×
+            </button>
+          </div>
+          <button
+            className='calc__confirm'
+            onClick={handleCalculate}
+          >
+            =
+          </button>
+        </div>
         <button
           className='calc__confirm'
-          type='submit'
-          onClick={() => {manipulateIfOneMissing(value1, value2, value3, value4)}}
-        >GO!</button>
+          onClick={handleClear}
+        >
+          C
+        </button>
       </div>
     </div>
   );

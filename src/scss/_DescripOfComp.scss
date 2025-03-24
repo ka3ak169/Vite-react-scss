@@ -15,6 +15,9 @@
     margin: 0 auto;
     max-width: 60%;
     text-align: center;
+    // font-weight: 100;
+    letter-spacing: .1rem;
+
   }
 
   .flavora-font {
@@ -25,9 +28,14 @@
   // Медиа-запрос для экранов шириной до 768px
   @media (max-width: 768px) {    
     &__text {
-      font-size: 26px;
+      font-size: 22px;
       max-width: 100%;
       gap: 30px;
     }
+    .flavora-font {
+      @include font-text;
+      font-size: 23px;
+    }
+
   }
 }
