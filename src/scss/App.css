@@ -409,7 +409,6 @@ body.no-scroll {
 .calc {
   color: #000;
   padding: 20px;
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
